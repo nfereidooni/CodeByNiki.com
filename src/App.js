@@ -1,21 +1,27 @@
-import './App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from './components/Header';
-import Footer from './components/Footer';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import "./App.css";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div>
-        <Header />
         <div className="container">
+          <Header />
           <Switch>
-            <Route exact path="/nf_react_portfolio" component={About} />
-            <Route exact path="/nf_react_portfolio/contact" component={Contact} />
-            <Route exact path="/nf_react_portfolio/portfolio" component={Portfolio} />
+            <Route exact path="/">
+              <About />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/portfolio">
+              <Portfolio />
+            </Route>
           </Switch>
         </div>
         <Footer />
