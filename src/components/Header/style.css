@@ -9,13 +9,13 @@
 
 /* unvisited link */
  .navLink:link {
-    color: rgb(209, 209, 209);
+    color: rgb(230, 230, 230);
     text-decoration:none;
   }
   
   /* visited link */
   .navLink:visited {
-    color: rgb(209, 209, 209);
+    color: rgb(230, 230, 230);
     text-decoration:none;
   }
   
@@ -27,6 +27,6 @@
   
   /* selected link */
   .navLink:active {
-    color: rgb(209, 209, 209);
+    color: rgb(230, 230, 230);
     text-decoration:none;
   }
