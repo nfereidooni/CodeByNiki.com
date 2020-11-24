@@ -19,9 +19,9 @@ function Header(props) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto mt-2 mt-lg-0">
-            <NavLink to="/contact">Contact</NavLink>
-            <NavLink to="/portfolio">Portfolio</NavLink>
-            <NavLink to="/">About</NavLink>
+            <NavLink className="navLink" to="/contact">Contact</NavLink>
+            <NavLink className="navLink" to="/portfolio">Portfolio</NavLink>
+            <NavLink className="navLink" to="/">About</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

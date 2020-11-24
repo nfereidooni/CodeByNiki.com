@@ -1,3 +1,28 @@
 .header {
     float: top;
 }
+
+.navLink {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+/* unvisited link */
+    .navLink:link {
+    color: rgb(209, 209, 209);
+  }
+  
+  /* visited link */
+  .navLink:visited {
+    color: rgb(209, 209, 209);
+  }
+  
+  /* mouse over link */
+  .navLink:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  .navLink:active {
+    color: rgb(209, 209, 209);
+  }
