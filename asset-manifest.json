@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nf-react-portfolio/static/css/main.6a3c9869.chunk.css",
+    "main.css": "/nf-react-portfolio/static/css/main.79794575.chunk.css",
     "main.js": "/nf-react-portfolio/static/js/main.8242a3fd.chunk.js",
     "main.js.map": "/nf-react-portfolio/static/js/main.8242a3fd.chunk.js.map",
     "runtime-main.js": "/nf-react-portfolio/static/js/runtime-main.6ba8056b.js",
@@ -12,7 +12,7 @@
     "static/js/3.13dff52b.chunk.js.map": "/nf-react-portfolio/static/js/3.13dff52b.chunk.js.map",
     "index.html": "/nf-react-portfolio/index.html",
     "static/css/2.43b2b750.chunk.css.map": "/nf-react-portfolio/static/css/2.43b2b750.chunk.css.map",
-    "static/css/main.6a3c9869.chunk.css.map": "/nf-react-portfolio/static/css/main.6a3c9869.chunk.css.map",
+    "static/css/main.79794575.chunk.css.map": "/nf-react-portfolio/static/css/main.79794575.chunk.css.map",
     "static/js/2.72a53ec1.chunk.js.LICENSE.txt": "/nf-react-portfolio/static/js/2.72a53ec1.chunk.js.LICENSE.txt",
     "static/media/IMG_Niki.5eeaf6b0.jpg": "/nf-react-portfolio/static/media/IMG_Niki.5eeaf6b0.jpg",
     "static/media/codequiz.ae411373.PNG": "/nf-react-portfolio/static/media/codequiz.ae411373.PNG",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.6ba8056b.js",
     "static/css/2.43b2b750.chunk.css",
     "static/js/2.72a53ec1.chunk.js",
-    "static/css/main.6a3c9869.chunk.css",
+    "static/css/main.79794575.chunk.css",
     "static/js/main.8242a3fd.chunk.js"
   ]
 }
