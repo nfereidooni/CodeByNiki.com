@@ -1,0 +1,37 @@
+.main {
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: firebrick;
+
+}
+
+.portfolioContainer {
+    margin-left: 40px;
+}
+
+#portfolioCard {
+    margin: 20px;
+}
+
+.linkBtn {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.media-body p {
+    padding-top: 5px;
+    font-size: 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .media-p1 {
+      margin-top: 270px;
+    }
+  }
+
