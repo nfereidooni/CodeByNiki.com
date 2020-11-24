@@ -3,26 +3,30 @@
 }
 
 .navLink {
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 /* unvisited link */
-    .navLink:link {
+ .navLink:link {
     color: rgb(209, 209, 209);
+    text-decoration:none;
   }
   
   /* visited link */
   .navLink:visited {
     color: rgb(209, 209, 209);
+    text-decoration:none;
   }
   
   /* mouse over link */
   .navLink:hover {
     color: white;
+    text-decoration:none;
   }
   
   /* selected link */
   .navLink:active {
     color: rgb(209, 209, 209);
+    text-decoration:none;
   }
