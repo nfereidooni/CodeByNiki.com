@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css"
+import getgrowing from "../assets/img/getgrowing.PNG"
 import restaurantfinder from "../assets/img/restaurantfinder.PNG"
 import flamegame from "../assets/img/flamegame.PNG"
 import codequiz from "../assets/img/codequiz.PNG"
@@ -22,11 +23,11 @@ function Portfolio(props) {
 
         <div className="col-xs-12 col-md-6 col-lg-4">
           <Project 
-          name="What's for Dinner?"
-          image={restaurantfinder}
-          desc="An web application to help figure out life's most important question, using the Yelp and Edamam APIs."
-          vlink="https://ryanbrowne360.github.io/Project1/"
-          glink="https://github.com/ryanbrowne360/Project1"
+          name="Get Growing"
+          image={getgrowing}
+          desc="A social platform that allows you to track your garden and share it with the world, using NoSQL & React."
+          vlink="https://murmuring-dawn-18632.herokuapp.com/"
+          glink="https://github.com/ryanbrowne360/GardenAppProject"
           />
         </div>
 
@@ -37,6 +38,16 @@ function Portfolio(props) {
           desc="An online e-commerce website with functioning add to cart and checkout features, using mySQL & Express."
           vlink="https://tranquil-temple-78360.herokuapp.com/"
           glink="https://github.com/SSamoridny/Project-2-Flame-Game"
+          />
+        </div>
+
+        <div className="col-xs-12 col-md-6 col-lg-4">
+          <Project 
+          name="What's for Dinner?"
+          image={restaurantfinder}
+          desc="An web application to help figure out life's most important question, using the Yelp and Edamam APIs."
+          vlink="https://ryanbrowne360.github.io/Project1/"
+          glink="https://github.com/ryanbrowne360/Project1"
           />
         </div>
 
