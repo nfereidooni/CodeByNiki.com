@@ -13,7 +13,7 @@ function Header(props) {
         variant="dark"
         fixed="top"
       >
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="#">
           <b>Niki Fereidooni</b> &nbsp; &nbsp; Full-Stack Web Developer
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
