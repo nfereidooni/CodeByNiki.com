@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css"
-import getgrowing from "../assets/img/getgrowing.PNG"
+import getgrowing from "../assets/img/gardenapp.PNG"
 import restaurantfinder from "../assets/img/restaurantfinder.PNG"
 import flamegame from "../assets/img/flamegame.PNG"
 import codequiz from "../assets/img/codequiz.PNG"
