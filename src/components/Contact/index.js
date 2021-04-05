@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 
 
 function Contact(props) {
@@ -11,7 +11,16 @@ function Contact(props) {
           <div className="col-10">
             <h1><b>Contact</b></h1>
 
-            <Form id="contact-form" name="contact=form" action="mail.php" method="POST">
+            <p>Email: nikifereidooni@gmail.com
+              Phone Number: 416-735-6928
+              <Button variant="dark" size="lg" className="contactBtn" href="https://github.com/nfereidooni">GitHub</Button>
+              <Button variant="dark" size="lg" className="contactBtn" href="https://www.linkedin.com/in/nfereidooni/">LinkedIn</Button>
+
+          
+            </p>
+
+
+            {/* <Form id="contact-form" name="contact=form" action="mail.php" method="POST">
 
               <div className="form-group row">
                 <label for="colFormLabel" className="col-sm-2 col-form-label col-form-label-lg">Name</label>
@@ -34,20 +43,20 @@ function Contact(props) {
                 </div>
               </div>
 
-						</Form>
+						</Form> */}
 
-            <button type="submit" className="btn btn-danger" onclick="validateForm();">Submit</button>
+            {/* <button type="submit" className="btn btn-danger" onclick="validateForm();">Submit</button> */}
     
 			    </div>
         </div>
       </div>
 
-        <div className="row">
+        {/* <div className="row">
           <div className="col-1"></div>
           <div className="col-7">
             <div className="status"></div>
           </div>
-        </div>
+        </div> */}
 
     </Container>
   );
