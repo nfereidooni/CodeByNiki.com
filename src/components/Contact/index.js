@@ -12,9 +12,9 @@ function Contact(props) {
             <h1><b>Contact</b></h1>
 
             <p>Email: nikifereidooni@gmail.com
-              Phone Number: 416-735-6928
-              <Button variant="dark" size="lg" className="contactBtn" href="https://github.com/nfereidooni">GitHub</Button>
-              <Button variant="dark" size="lg" className="contactBtn" href="https://www.linkedin.com/in/nfereidooni/">LinkedIn</Button>
+              <br/>Phone Number: 416-735-6928
+              <br/><Button variant="dark" size="lg" className="contactBtn" href="https://github.com/nfereidooni">GitHub</Button>
+              <br/><Button variant="dark" size="lg" className="contactBtn" href="https://www.linkedin.com/in/nfereidooni/">LinkedIn</Button>
 
           
             </p>
