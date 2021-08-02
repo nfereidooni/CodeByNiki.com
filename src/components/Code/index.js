@@ -11,7 +11,7 @@ import { Container } from "react-bootstrap";
 import Project from "../Project"
 
 
-function Portfolio(props) {
+function Code(props) {
   return(
     <Container>
       <div className="main">
@@ -98,4 +98,4 @@ function Portfolio(props) {
   );
 }
 
-export default Portfolio;
+export default Code;

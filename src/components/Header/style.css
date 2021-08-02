@@ -5,24 +5,24 @@
 
 /* unvisited link */
  .navLink:link {
-    color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
     text-decoration:none;
   }
   
   /* visited link */
   .navLink:visited {
-    color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
     text-decoration:none;
   }
   
   /* mouse over link */
   .navLink:hover {
-    color: white;
+    color: rgb(151, 39, 142);
     text-decoration:none;
   }
   
   /* selected link */
   .navLink:active {
-    color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
     text-decoration:none;
   }
