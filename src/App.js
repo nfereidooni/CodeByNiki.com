@@ -2,8 +2,10 @@ import "./App.css";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Code from "./components/Code";
+import Design from "./components/Design";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 
 function App() {
@@ -14,13 +16,19 @@ function App() {
           <Header />
           <Switch>
             <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/code">
+              <Code />
+            </Route>
+            <Route path="/design">
+              <Design />
+            </Route>
+            <Route exact path="/about">
               <About />
             </Route>
             <Route path="/contact">
               <Contact />
-            </Route>
-            <Route path="/portfolio">
-              <Portfolio />
             </Route>
           </Switch>
         </div>
