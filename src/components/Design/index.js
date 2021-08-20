@@ -17,11 +17,14 @@ function Design(props) {
       <div className="main">
         <div className="row">
           <div className="col-1"></div>
-          <h1><b>Portfolio</b></h1>
+          <h1><b>Design</b></h1>
         </div>
         <div className="row portfolioContainer">
 
-        <div className="col-xs-12 col-md-6 col-lg-4">
+        <div className="comingSoon m-auto text-center"> <p>Coming Soon</p> </div>
+
+
+        {/* <div className="col-xs-12 col-md-6 col-lg-4">
           <Project 
           name="Get Growing"
           image={getgrowing}
@@ -89,7 +92,7 @@ function Design(props) {
           vlink="https://nfereidooni.github.io/nf_weather_dashboard/Assets/index.html"
           glink="https://github.com/nfereidooni/nf_weather_dashboard"
           />
-        </div>
+        </div> */}
           
       </div>
       </div>
