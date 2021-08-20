@@ -17,7 +17,7 @@ function Code(props) {
       <div className="main">
         <div className="row">
           <div className="col-1"></div>
-          <h1><b>Portfolio</b></h1>
+          <h1><b>Code</b></h1>
         </div>
         <div className="row portfolioContainer">
 
