@@ -5,20 +5,36 @@ import { Container, Card, Button } from "react-bootstrap";
 
 function Project(props) {
   return(
-    <Container>
+    // <Container>
           <Card className="text-center justify-content-center" id="portfolioCard">
-            <div id="imageContainer">
+            <div className="imageContainer">
               <Card.Img variant="top" src={props.image} id="porfolioImg" />
             </div>
-            <Card.Body>
-              <Card.Title>{props.name}</Card.Title>
-              <Card.Text className="card-text">{props.desc}</Card.Text>
-              <Button variant="dark" className="linkBtn" href={props.vlink}>View</Button>
-              <Button variant="dark" className="linkBtn" href={props.glink}>Github</Button>
-            </Card.Body>
+            <div className="overlayContainer">
+              <Card.ImgOverlay>
+                <Card.Title>{props.name}</Card.Title>
+                <Card.Text className="card-text">{props.desc}</Card.Text>
+                <Button variant="dark" className="linkBtn" href={props.vlink}>View</Button>
+                <Button variant="dark" className="linkBtn" href={props.glink}>Github</Button>
+              </Card.ImgOverlay>
+            </div>
           </Card>
-    </Container>
+    // </Container>
   );
 }
 
+// previous card
+// <Container>
+// <Card className="text-center justify-content-center" id="portfolioCard">
+//   <div id="imageContainer">
+//     <Card.Img variant="top" src={props.image} id="porfolioImg" />
+//   </div>
+//   <Card.Body>
+//     <Card.Title>{props.name}</Card.Title>
+//     <Card.Text className="card-text">{props.desc}</Card.Text>
+//     <Button variant="dark" className="linkBtn" href={props.vlink}>View</Button>
+//     <Button variant="dark" className="linkBtn" href={props.glink}>Github</Button>
+//   </Card.Body>
+// </Card>
+// </Container>
 export default Project;

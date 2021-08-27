@@ -1,18 +1,3 @@
-.bg {
-    height: 100%;
-
-      /* The image used */
-  background-image: url("../assets/img/pinkpurplebg_resize.jpg");
-
-  height: 100vh;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .main-home {
     padding-top: 100px;
     margin: 0;
@@ -21,6 +6,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    
 }
 
 .logo-home {

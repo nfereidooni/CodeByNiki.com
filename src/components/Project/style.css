@@ -10,12 +10,28 @@ h1 {
 
 }
 
-.portfolioContainer {
-    margin-left: 40px;
+#portfolioCard {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
-#portfolioCard {
-    margin: 20px;
+/* .imageContainer {
+
+} */
+
+#portfolioCard>.overlayContainer {
+    display: none;
+}
+
+#portfolioCard:hover>.overlayContainer {
+    display: block;
+    color: white;
+}
+
+#portfolioCard:hover>.imageContainer {
+    filter: brightness(50%)
 }
 
 .linkBtn {
@@ -28,6 +44,7 @@ h1 {
     font-size: 20px;
 
 }
+
 
 /* @media only screen and (max-width: 600px) {
     .media-p1 {
