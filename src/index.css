@@ -7,6 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bg {
+  height: 100vh; 
+/* used to be 100% */
+    /* The image used */
+background-image: url("components/assets/img/pinkpurplebg_resize.jpg");
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+padding-bottom: 100px;
+padding-top: 100px;
+/* min-height: 3000px; */
+overflow:scroll;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
