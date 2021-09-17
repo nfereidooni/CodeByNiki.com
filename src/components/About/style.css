@@ -6,9 +6,10 @@
 }
 
 .headshot {
-    max-width: 150px;
+    max-width: 200px;
     margin-right: 20px;
     margin-bottom: 5px;
+    margin-top: 15px;
 
 }
 
@@ -21,7 +22,8 @@
     padding-top: 5px;
     font-size: 20px;
     color: white;
-
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* @media only screen and (max-width: 600px) {

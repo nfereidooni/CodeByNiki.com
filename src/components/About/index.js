@@ -1,8 +1,7 @@
 import React from "react";
 import "./style.css";
 import portrait from "../assets/img/IMG_Niki.jpg"
-import resume from "../assets/nf_resume.pdf"
-import { Container, Button, Image } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 
 
 function About(props) {
@@ -12,7 +11,7 @@ function About(props) {
             <h1 className="pageTitle text-center"><b>About Me</b></h1>
 
                 <div className="media">
-                    <Image className="headshotr" width="250" alt="Portrait of Niki Fereidooni" src={portrait} />
+                    <Image className="headshot" width="250" alt="Portrait of Niki Fereidooni" src={portrait} />
                     
                     <div className="media-body">
                     
@@ -20,15 +19,22 @@ function About(props) {
                             <b>Located in Toronto, Canada</b>
                             <br/>
                             <br/>
-                            Hi, I'm Niki. 
+                            <i>Hi, I'm <b>Niki</b>.</i>
                             <br/>
-                            I'm a Frontend Web Developer, with a love for learning, good coffee, and code! 
                             <br/>
-                            I have gone through a transformative year, with a major career change, working on health and fitness goals, and practicing mindfulness.
+                            I'm a Frontend Web Developer, specializing in <b>React</b> and <b>Wordpress</b>. 
+                            <br/>
+                            <br/>
+                            I'm also a Certified ScrumMaster (CSM) and former project manager.
+                            <br/>
+                            <br/>
+                            I'm both creative and analytical, and find frontend web development to a wonderful mesh of what I love to do. I strive to create beautifully-designed and functional websites.
+                            <br/>
+                            <br/>
+                            I love to learn, meet new people, and sip on good coffee! Some of my hobbies include yoga, playing backgammon and chess, and visiting art museums.
+                            <br/>
                             <br/>
                             I value honesty and authenticity - these are qualities I admire in the people closest to me, as well as managers and colleagues. I try to live as authentically as I can.
-                            <br/>
-                            Being both creative and analytical, I believe frontend web development is a wonderful mesh of my passions, creating beautifully-designed and functional websites.
                         </p>
                         <br/>
                     </div>

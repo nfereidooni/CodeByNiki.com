@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Container, Card, Button } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 
 
 function Project(props) {
@@ -14,6 +14,7 @@ function Project(props) {
               <Card.ImgOverlay>
                 <Card.Title>{props.name}</Card.Title>
                 <Card.Text className="card-text">{props.desc}</Card.Text>
+                <Card.Text className="card-date">Date Created: {props.date}</Card.Text>
                 <Button variant="dark" className="linkBtn" href={props.vlink}>View</Button>
                 <Button variant="dark" className="linkBtn" href={props.glink}>Github</Button>
               </Card.ImgOverlay>
