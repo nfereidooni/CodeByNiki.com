@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import "./style.css"
 import getgrowing from "../assets/img/gardenapp_sq.png"
 import restaurantfinder from "../assets/img/restaurantfinder_sq.png"
@@ -7,7 +7,7 @@ import codequiz from "../assets/img/codequiz_sq.png"
 import eatdaburger from "../assets/img/eatdaburger_sq.png"
 import workdayscheduler from "../assets/img/workdayscheduler_sq.png"
 import weatherdashboard from "../assets/img/weathedashboard_sq.png"
-import { Container } from "react-bootstrap";
+import { Container, Dropdown} from "react-bootstrap";
 import Project from "../Project"
 
 // Array of Projects 
@@ -64,78 +64,89 @@ const CODE_DATA = [
   glink: "https://github.com/nfereidooni/nf_weather_dashboard"}
 ]
 
+// Sorting Functions
+
+// Sort by Date Ascending Function
+
+function sortbyDateAsc() {
+
+    const items = CODE_DATA.sort((a,b) => {
+      return new Date(b.date) - new Date(a.date);
+    });
+}
+
+// Sort by Date Descending Function
+
+function sortbyDateDesc() {
+
+    const items = CODE_DATA.sort((a,b) => {
+      return new Date(a.date) - new Date(b.date);
+    });
+}
+
+// Sort by Name Ascending Function
+
+function sortbyNameAsc() {
+
+  const items = CODE_DATA.sort((a,b) => {
+    if (b.name < a.name) {
+      return 1;
+    }
+    if (b.name > a.name) {
+      return -1;
+    }
+    return 0;
+  });
+
+  console.log('The link was clicked.');
+}
+
+// Sort by Name Descending Function
+
+function sortbyNameDesc() {
+
+  const items = CODE_DATA.sort((a,b) => {
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+  });
+  
+  console.log(items)
+
+}
+
 // Page Render Function
 
 function Code(props) {
+  const [sortFunction, setSortFunction] = useState([])
 
-  const [sortType, setSortType] = useState('name');
+  const handleChange=(event)=>{
+    if (event.target.value === "name-asc") {
+      setSortFunction(sortbyNameAsc());
+    } else if (event.target.value === "name-desc") {
+      setSortFunction(sortbyNameDesc());
+    } else if (event.target.value === "date-asc") {
+      setSortFunction(sortbyDateAsc());
+    } else if (event.target.value === "date-desc") {
+      setSortFunction(sortbyDateDesc());
+    }
+    }
+  // Render Projects
 
-  function sortbyDate(a, b) {
-      return new Date(a.date) - new Date(b.date);
-    };
-  
-
-  function sortbyName(a, b) {
-      if (b.name < a.name) {
-        return 1;
-      }
-      if (b.name > a.name) {
-        return -1;
-      }
-      return 0; 
-    }  
-
-  // useEffect(() => {
-  //       const sortArray = type => {
-  //         const types = {
-  //           name: 'name',
-  //           date: 'date',
-  //         }
-
-  //         const sortProperty = types[type];
-
-  //         console.log("button was clicked", sortProperty)
-
-  //         if (sortProperty === "name") {
-  //           sortbyName()
-  //         }
-  //         else if (sortProperty === "date") {
-  //           sortbyDate()
-  //         }
-  //       };
+  const renderProjects = () =>   {
+    const sortedProjects = CODE_DATA.sort(
+      // sort compare
+    )
     
-  //       sortArray(sortType);
-  //     }, [sortType]); 
-
-// Page HTML
-
-let sortFunction;
-
-if (sortType === "name") {
-  sortFunction = sortbyName
-      }
-else if (sortType === "date") {
-  sortFunction = sortbyDate
-      }
-
-const sortedData = CODE_DATA.sort(sortFunction)
+    console.log(sortFunction)
 
     return(
-  
-    <div className="bg">
-    <Container>
-
-      <h1 className="pageTitle text-center"><b>Code</b></h1>
-        
-      <select className="sortDropdown" id="sort-dropdown" onChange={(e) => setSortType(e.target.value)}>
-          <option value="name">Name &darr;</option>
-          <option value="date">Date &darr;</option>
-      </select>
-
-        <div className="row portfolioContainer">
-        
-        {sortedData.map(project => (
-       <div className="col-xs-12 col-md-6 col-lg-4">
+      sortedProjects.map(function(project){
+      return <div className="col-xs-12 col-md-6 col-lg-4">
                 <Project 
                 name={project.name}
                 image={project.image}
@@ -144,14 +155,51 @@ const sortedData = CODE_DATA.sort(sortFunction)
                 vlink={project.vlink}
                 glink={project.glink}
                 />
-        </div>
-        ))}
+              </div>;
+              })
+          )}
+
+
+    
+// Page HTML
+
+  return(
+    <div className="bg">
+    <Container>
+
+        <h1 className="pageTitle text-center"><b>Code</b></h1>
+        
+    <select className="sortDropdown" id="sort-dropdown" onChange={handleChange}>
+        <option value="">--Sort by--</option>
+        <option value="name-asc">Name &darr;</option>
+        <option value="date-asc">Date &darr;</option>
+        <option value="name-desc">Name &uarr;</option>
+        <option value="date-desc">Date &uarr;</option>
+    </select>
+
+        <div className="row portfolioContainer">
+        
+        {sortFunction}
+        
+        {renderProjects()}
           
         </div>
-
     </Container>
     </div>
   );
 }
 
 export default Code;
+
+        {/* <Dropdown className="sortDropdown" onSelect={handleSelect}>
+        <Dropdown.Toggle variant="dark" id="sort-dropdown">
+          Sort by
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item>Name &darr;</Dropdown.Item>
+          <Dropdown.Item>Date Created &darr;</Dropdown.Item>
+          <Dropdown.Item>Name &uarr;</Dropdown.Item>
+          <Dropdown.Item>Date Created &uarr;</Dropdown.Item>
+        </Dropdown.Menu>
+        </Dropdown> */}

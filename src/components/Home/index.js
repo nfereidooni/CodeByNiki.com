@@ -24,7 +24,7 @@ function Home(props) {
             <br/>I’m a Frontend Web Developer, specializing in React and Wordpress.
             <br/>I'm also a Certified ScrumMaster and former project manager.
 
-            <br/>It’s been <span className="duration">{quitYears}</span> years, <span className="duration">{quitMonths}</span> months, and <span className="duration">{quitDays}</span> days since I quit my job to study coding!
+            <br/>It’s been <span className="duration">{quitYears}</span> year, <span className="duration">{quitMonths}</span> months, and <span className="duration">{quitDays}</span> days since I quit my job to study coding!
 
             </p>
 

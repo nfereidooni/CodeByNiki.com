@@ -7,7 +7,7 @@ import codequiz from "../assets/img/codequiz_sq.png"
 import eatdaburger from "../assets/img/eatdaburger_sq.png"
 import workdayscheduler from "../assets/img/workdayscheduler_sq.png"
 import weatherdashboard from "../assets/img/weathedashboard_sq.png"
-import { Container } from "react-bootstrap";
+import { Container, Dropdown} from "react-bootstrap";
 import Project from "../Project"
 
 // Array of Projects 
@@ -68,14 +68,19 @@ const CODE_DATA = [
 
 function Code(props) {
 
-  const [sortType, setSortType] = useState('name');
+  const [data, setData] = useState([]);
 
-  function sortbyDate(a, b) {
-      return new Date(a.date) - new Date(b.date);
-    };
-  
+  const [sortType, setSortType] = useState('projects');
 
-  function sortbyName(a, b) {
+  function sortbyDate() {
+    const sorted = CODE_DATA.sort((a,b) => {
+      return new Date(b.date) - new Date(a.date);
+    });
+    setData(sorted);
+  }
+
+  function sortbyName() {
+    const sorted = CODE_DATA.sort((a,b) => {
       if (b.name < a.name) {
         return 1;
       }
@@ -83,42 +88,40 @@ function Code(props) {
         return -1;
       }
       return 0; 
-    }  
+    });
+    setData(sorted);
+  }
 
-  // useEffect(() => {
-  //       const sortArray = type => {
-  //         const types = {
-  //           name: 'name',
-  //           date: 'date',
-  //         }
+  const
+  // const sortedArrayByName = Array.from(sortbyName());
+  // const sortedArrayByDate = Array.from(sortbyDate());
 
-  //         const sortProperty = types[type];
+  // console.log(sortedArrayByDate)
+  // console.log(sortedArrayByName)
 
-  //         console.log("button was clicked", sortProperty)
+  useEffect(() => {
+        const sortArray = type => {
+          const types = {
+            name: 'name',
+            date: 'date',
+          }
 
-  //         if (sortProperty === "name") {
-  //           sortbyName()
-  //         }
-  //         else if (sortProperty === "date") {
-  //           sortbyDate()
-  //         }
-  //       };
+          const sortProperty = types[type];
+
+          function sortFunction() {
+            if (sortProperty === "name") {
+              sortbyName()
+            }
+            else if (sortProperty === "date") {
+              sortbyDate()
+            }
+          };
+        };
     
-  //       sortArray(sortType);
-  //     }, [sortType]); 
+        sortArray(sortType);
+      }, [sortType]); 
 
 // Page HTML
-
-let sortFunction;
-
-if (sortType === "name") {
-  sortFunction = sortbyName
-      }
-else if (sortType === "date") {
-  sortFunction = sortbyDate
-      }
-
-const sortedData = CODE_DATA.sort(sortFunction)
 
     return(
   
@@ -134,7 +137,7 @@ const sortedData = CODE_DATA.sort(sortFunction)
 
         <div className="row portfolioContainer">
         
-        {sortedData.map(project => (
+        {data.map(project => (
        <div className="col-xs-12 col-md-6 col-lg-4">
                 <Project 
                 name={project.name}
