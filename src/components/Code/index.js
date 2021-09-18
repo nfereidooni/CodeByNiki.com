@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import "./style.css"
 import getgrowing from "../assets/img/gardenapp_sq.png"
 import restaurantfinder from "../assets/img/restaurantfinder_sq.png"
@@ -68,14 +68,17 @@ const CODE_DATA = [
 
 function Code(props) {
 
-  const [sortType, setSortType] = useState('name');
+  const [sortType, setSortType] = useState('name-asc');
 
-  function sortbyDate(a, b) {
+  function sortbyDateAsc(a, b) {
       return new Date(a.date) - new Date(b.date);
     };
   
+  function sortbyDateDesc(a, b) {
+      return new Date(b.date) - new Date(a.date);
+    };
 
-  function sortbyName(a, b) {
+  function sortbyNameAsc(a, b) {
       if (b.name < a.name) {
         return 1;
       }
@@ -85,37 +88,31 @@ function Code(props) {
       return 0; 
     }  
 
-  // useEffect(() => {
-  //       const sortArray = type => {
-  //         const types = {
-  //           name: 'name',
-  //           date: 'date',
-  //         }
-
-  //         const sortProperty = types[type];
-
-  //         console.log("button was clicked", sortProperty)
-
-  //         if (sortProperty === "name") {
-  //           sortbyName()
-  //         }
-  //         else if (sortProperty === "date") {
-  //           sortbyDate()
-  //         }
-  //       };
-    
-  //       sortArray(sortType);
-  //     }, [sortType]); 
+    function sortbyNameDesc(a, b) {
+      if (b.name > a.name) {
+        return 1;
+      }
+      if (b.name < a.name) {
+        return -1;
+      }
+      return 0; 
+    }  
 
 // Page HTML
 
 let sortFunction;
 
-if (sortType === "name") {
-  sortFunction = sortbyName
+if (sortType === "name-asc") {
+  sortFunction = sortbyNameAsc
       }
-else if (sortType === "date") {
-  sortFunction = sortbyDate
+else if (sortType === "date-asc") {
+  sortFunction = sortbyDateAsc
+      }
+else if (sortType === "name-desc") {
+  sortFunction = sortbyNameDesc
+      }
+else if (sortType === "date-desc") {
+  sortFunction = sortbyDateDesc
       }
 
 const sortedData = CODE_DATA.sort(sortFunction)
@@ -128,8 +125,10 @@ const sortedData = CODE_DATA.sort(sortFunction)
       <h1 className="pageTitle text-center"><b>Code</b></h1>
         
       <select className="sortDropdown" id="sort-dropdown" onChange={(e) => setSortType(e.target.value)}>
-          <option value="name">Name &darr;</option>
-          <option value="date">Date &darr;</option>
+          <option value="name-asc">&darr; Name</option>
+          <option value="date-asc">&darr; Date</option>
+          <option value="name-desc">&uarr; Name</option>
+          <option value="date-desc">&uarr; Date</option>
       </select>
 
         <div className="row portfolioContainer">

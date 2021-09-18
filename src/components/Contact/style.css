@@ -10,6 +10,28 @@
     margin-left: 40px;
 }
 
+.button-group {
+    justify-content: center;
+}
+
+.button1 {
+    background-color:transparent;
+    color: white;
+    border: 3px solid #4CAF50; /* Green */
+    font-size: 20px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    margin: 2px;
+}
+
+.button1:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+
+
 /* @media only screen and (max-width: 600px) {
     .media-p1 {
       margin-top: 270px;
