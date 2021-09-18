@@ -24,7 +24,7 @@ const CODE_DATA = [
   {name: "Flame Game",
   image: flamegame,
   desc: "An online e-commerce website with functioning add to cart and checkout features, using mySQL & Express.",
-  date: "2020-09-29",
+  date: "2020-10-29",
   vlink: "https://tranquil-temple-78360.herokuapp.com/",
   glink: "https://github.com/SSamoridny/Project-2-Flame-Game"},
 
@@ -45,21 +45,21 @@ const CODE_DATA = [
   {name: "Eat-Da-Burger",
   image: eatdaburger,
   desc: "A burger-eating app where you can add and eat custom burgers, using mySQL and Express Handlebars.",
-  date: "2020-10-11",
+  date: "2020-10-26",
   vlink: "https://infinite-scrubland-34308.herokuapp.com/",
   glink: "https://github.com/nfereidooni/nf_node_express_handlebars"},
 
   {name: "Workday Scheduler",
   image: workdayscheduler,
   desc: "A web application to help schedule your workday using Moment.js to display the current time and local storage.",
-  date: "2020-10-06",
+  date: "2020-10-15",
   vlink: "https://nfereidooni.github.io/nf_workday_scheduler/",
   glink: "https://github.com/nfereidooni/nf_workday_scheduler"},
 
   {name: "Weather Dashboard",
   image: weatherdashboard,
   desc: "A weather dashboard that uses OpenWeather API to retrieve weather data for cities and maintains a search history.",
-  date: "2020-11-10",
+  date: "2020-10-11",
   vlink: "https://nfereidooni.github.io/nf_weather_dashboard/Assets/index.html",
   glink: "https://github.com/nfereidooni/nf_weather_dashboard"}
 ]
