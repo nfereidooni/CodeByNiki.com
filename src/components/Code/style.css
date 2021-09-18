@@ -9,8 +9,7 @@
 }
 
 .sortDropdown {
-    text-align: right;
-    align-content:flex-start;
+    float:left;
     margin-bottom: 10px;
 }
 
