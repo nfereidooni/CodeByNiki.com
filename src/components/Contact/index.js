@@ -20,7 +20,8 @@ function Contact(props) {
         <button className="button1 text-center" href="https://www.linkedin.com/in/nfereidooni/"><i class="fab fa-linkedin"></i>  LinkedIn</button>
         <button className="button1 text-center" href="mailto: nikifereidooni@gmail.com"><i class="far fa-envelope"></i>  Email</button>
       </div>
-
+      
+    </Container>
     </div>
   );
 }
