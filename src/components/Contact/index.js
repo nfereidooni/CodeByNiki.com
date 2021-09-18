@@ -14,6 +14,14 @@ function Contact(props) {
       
       <p className="contactBody text-center"><b>Phone Number:</b> 416-735-6928</p>
 
+
+      <div className="button-group row">
+        <button className="button1 text-center"><i class="fab fa-github"></i>  Github</button>
+        <button className="button1 text-center"><i class="fab fa-linkedin"></i>  LinkedIn</button>
+        <button className="button1 text-center"><i class="far fa-envelope"></i>  Email</button>
+        <button className="button1 text-center"><i class="fab fa-github"></i>  Github</button>
+      </div>
+
     </Container>
     </div>
   );
