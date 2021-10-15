@@ -14,7 +14,7 @@
 ## Installation:
     View on my custom domain: http://www.codebyniki.com
 ## Credits:
-    My coding mentor, [Darga](https://github.com/dargaCode), as well as Fil & David, my course instructors.
+    My coding mentor, <a href="https://github.com/dargaCode" target="_blank">Darga</a>, as well as Fil & David, my course instructors.
 ## License:
     MIT LICENSE
 
