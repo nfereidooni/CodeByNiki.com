@@ -10,15 +10,15 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description: 
-    The goal of this project was to recreate our portfolio using React and deploy it to Github pages.
+    This project is my development portfolio, which has been created using React.
 ## Installation:
-    View on Github Pages: https://nfereidooni.github.io/nf-react-portfolio/
+    View on my custom domain: http://www.codebyniki.com
 ## Credits:
-    Fil & David, my instructors
+    My coding mentor, [Darga](https://github.com/dargaCode), as well as Fil & David, my course instructors.
 ## License:
     MIT LICENSE
 
-Copyright (c) [2020] [Niki Fereidooni]
+Copyright (c) [2021] [Niki Fereidooni]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -14,12 +14,12 @@ import Project from "../Project"
 
 const CODE_DATA = [
 
-  {name: "Get Growing",
-  image: getgrowing,
-  desc: "A social platform that allows you to track your garden and share it with the world, using NoSQL & React.",
-  date: "2020-11-21",
-  vlink: "https://murmuring-dawn-18632.herokuapp.com/",
-  glink: "https://github.com/ryanbrowne360/GardenAppProject"},
+  // {name: "Get Growing",
+  // image: getgrowing,
+  // desc: "A social platform that allows you to track your garden and share it with the world, using NoSQL & React.",
+  // date: "2020-11-21",
+  // vlink: "https://murmuring-dawn-18632.herokuapp.com/",
+  // glink: "https://github.com/ryanbrowne360/GardenAppProject"},
 
   {name: "Flame Game",
   image: flamegame,
