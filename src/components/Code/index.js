@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import "./style.css"
-import getgrowing from "../assets/img/gardenapp_sq.png"
+// import getgrowing from "../assets/img/gardenapp_sq.png"
 import restaurantfinder from "../assets/img/restaurantfinder_sq.png"
 import flamegame from "../assets/img/flamegame_sq.png"
 import codequiz from "../assets/img/codequiz_sq.png"
@@ -8,7 +8,7 @@ import eatdaburger from "../assets/img/eatdaburger_sq.png"
 import workdayscheduler from "../assets/img/workdayscheduler_sq.png"
 import weatherdashboard from "../assets/img/weathedashboard_sq.png"
 import { Container } from "react-bootstrap";
-import Project from "../Project"
+import CodeProject from "../CodeProject"
 
 // Array of Projects 
 
@@ -135,7 +135,7 @@ const sortedData = CODE_DATA.sort(sortFunction)
         
         {sortedData.map(project => (
        <div className="col-xs-12 col-md-6 col-lg-4">
-                <Project 
+                <CodeProject 
                 name={project.name}
                 image={project.image}
                 desc={project.desc}
