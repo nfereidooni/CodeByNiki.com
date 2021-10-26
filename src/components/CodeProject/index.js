@@ -43,8 +43,8 @@ function CodeProject(props) {
               <br/>
               <br/>
 
-              <Button variant="dark" className="linkBtn" href={props.vlink}>View App</Button>
-              <Button variant="dark" className="linkBtn" href={props.glink}>View Github</Button>
+              <Button variant="dark" className="linkBtn" href={props.vlink} target="_blank">View App</Button>
+              <Button variant="dark" className="linkBtn" href={props.glink} target="_blank">View Github</Button>
 
               
 
@@ -55,7 +55,7 @@ function CodeProject(props) {
 
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="primary" onClick={handleClose}>
+            <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
           </Modal.Footer>
