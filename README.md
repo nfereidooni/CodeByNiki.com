@@ -14,7 +14,7 @@ This project is my development portfolio, which has been created using React.
 ## Installation:
 View on my custom domain: http://www.codebyniki.com
 ## Credits:
-My coding mentor, [Darga](github.com/dargaCode), as well as Fil & David, my course instructors.
+My coding mentor, [Darga](http://www.github.com/dargaCode), as well as Fil & David, my course instructors.
 ## License:
 MIT LICENSE
 
