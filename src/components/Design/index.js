@@ -61,7 +61,7 @@ const DESIGN_DATA = [
 
 // Page Render Function
 
-function Code(props) {
+function Design(props) {
 
   const [sortType, setSortType] = useState('name-asc');
 
@@ -117,7 +117,7 @@ const sortedData = DESIGN_DATA.sort(sortFunction)
     <div className="bg">
     <Container>
 
-      <h1 className="pageTitle text-center"><b>Code</b></h1>
+      <h1 className="pageTitle text-center"><b>Design</b></h1>
         
       <select className="sortDropdown" id="sort-dropdown" onChange={(e) => setSortType(e.target.value)}>
           <option value="name-asc">&darr; Name</option>
@@ -149,4 +149,4 @@ const sortedData = DESIGN_DATA.sort(sortFunction)
   );
 }
 
-export default Code;
+export default Design;
