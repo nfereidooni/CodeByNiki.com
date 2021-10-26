@@ -28,7 +28,7 @@ function About(props) {
                             I'm also a Certified ScrumMaster (CSM) and former project manager.
                             <br/>
                             <br/>
-                            I'm both creative and analytical, and find frontend web development to a wonderful mesh of what I love to do. I strive to create beautifully-designed and functional websites.
+                            I'm both creative and analytical, and find frontend web development to be a wonderful mesh of what I love to do. I strive to create beautifully-designed and functional websites.
                             <br/>
                             <br/>
                             I love to learn, meet new people, and sip on good coffee! Some of my hobbies include yoga, playing backgammon and chess, and visiting art museums.
