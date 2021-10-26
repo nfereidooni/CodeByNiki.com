@@ -10,28 +10,24 @@ h1 {
 
 }
 
-#portfolioCard {
+#portfolioCardDes {
     margin-right: 0px;
     margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 20px;
 }
 
-/* .imageContainer {
-
-} */
-
-#portfolioCard>.overlayContainer {
+#portfolioCardDes>.overlayContainer {
     display: none;
 }
 
-#portfolioCard:hover>.overlayContainer {
+#portfolioCardDes:hover>.overlayContainer {
     display: block;
     color: white;
 }
 
-#portfolioCard:hover>.imageContainer {
-    filter: brightness(50%)
+#portfolioCardDes:hover>.imageContainer {
+    filter: opacity(80%)
 }
 
 .linkBtn {
@@ -44,7 +40,6 @@ h1 {
     font-size: 20px;
 
 }
-
 
 /* @media only screen and (max-width: 600px) {
     .media-p1 {
