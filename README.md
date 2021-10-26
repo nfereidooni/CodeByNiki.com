@@ -10,13 +10,13 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description: 
-    This project is my development portfolio, which has been created using React.
+This project is my development portfolio, which has been created using React.
 ## Installation:
-    View on my custom domain: http://www.codebyniki.com
+View on my custom domain: http://www.codebyniki.com
 ## Credits:
-    My coding mentor, [Darga](github.com/dargaCode), as well as Fil & David, my course instructors.
+My coding mentor, [Darga](github.com/dargaCode), as well as Fil & David, my course instructors.
 ## License:
-    MIT LICENSE
+MIT LICENSE
 
 Copyright (c) [2021] [Niki Fereidooni]
 
