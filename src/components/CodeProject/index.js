@@ -1,41 +1,70 @@
-import React from "react";
+import React, {useState} from "react";
 import "./style.css";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Modal, Image } from "react-bootstrap";
 
 
 function CodeProject(props) {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return(
-    // <Container>
-          <Card className="text-center justify-content-center" id="portfolioCard">
-            <div className="imageContainer">
-              <Card.Img variant="top" src={props.image} id="porfolioImg" />
+
+      <>
+        <Card className="text-center justify-content-center" id="portfolioCard" onClick={handleShow}>
+          <div className="imageContainer">
+            <Card.Img variant="top" src={props.sqimage} id="porfolioImg"/>
+          </div>
+          <div className="overlayContainer">
+            <Card.ImgOverlay />
+          </div>
+        </Card>
+
+
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>{props.name}</Modal.Title>
+          </Modal.Header>
+
+          <Modal.Body>
+            <div className="projectdesc mb-4">
+              <i>Date Created: {props.date}</i>
+              <br/>
+              <br/>
+              {props.desc}
+
+              <br/>
+              <br/>
+
+              <Image className="img-responsive w-100" src={props.image} />
+
+              <br/>
+              <br/>
+
+              <Button variant="dark" className="linkBtn" href={props.vlink}>View App</Button>
+              <Button variant="dark" className="linkBtn" href={props.glink}>View Github</Button>
+
+              
+
             </div>
-            <div className="overlayContainer">
-              <Card.ImgOverlay>
-                <Card.Title>{props.name}</Card.Title>
-                <Card.Text className="card-text">{props.desc}</Card.Text>
-                <Card.Text className="card-date">Date Created: {props.date}</Card.Text>
-                <Button variant="dark" className="linkBtn" href={props.vlink}>View</Button>
-                <Button variant="dark" className="linkBtn" href={props.glink}>Github</Button>
-              </Card.ImgOverlay>
-            </div>
-          </Card>
-    // </Container>
+            
+
+
+
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="primary" onClick={handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+
+      </>
+
   );
 }
 
-// previous card
-// <Container>
-// <Card className="text-center justify-content-center" id="portfolioCard">
-//   <div id="imageContainer">
-//     <Card.Img variant="top" src={props.image} id="porfolioImg" />
-//   </div>
-//   <Card.Body>
-//     <Card.Title>{props.name}</Card.Title>
-//     <Card.Text className="card-text">{props.desc}</Card.Text>
-//     <Button variant="dark" className="linkBtn" href={props.vlink}>View</Button>
-//     <Button variant="dark" className="linkBtn" href={props.glink}>Github</Button>
-//   </Card.Body>
-// </Card>
-// </Container>
+
 export default CodeProject;

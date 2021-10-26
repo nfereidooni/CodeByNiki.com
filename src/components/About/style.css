@@ -25,9 +25,9 @@
     padding-left: 20px;
     padding-right: 20px;
 }
-
-/* @media only screen and (max-width: 600px) {
-    .media-p1 {
-      margin-top: 270px;
+/* 
+@media only screen and (max-width: 600px) {
+    .media-body {
+        display:block;
     }
 } */

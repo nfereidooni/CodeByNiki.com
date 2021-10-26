@@ -36,7 +36,7 @@ const DESIGN_DATA = [
 
   {name: "Elect Natalie Hart",
   image: votenh,
-  desc: "Website/postcard/brochure design for municipal election candidate Natalue Hart.",
+  desc: "Website/postcard/brochure design for municipal election candidate Natalie Hart.",
   date: "2018-09-01",
   img1: nh1,
   img2: nh2,
