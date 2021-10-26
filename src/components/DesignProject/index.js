@@ -61,7 +61,7 @@ function DesignProject(props) {
 
             </Modal.Body>
             <Modal.Footer>
-              <Button variant="primary" onClick={handleClose}>
+              <Button variant="secondary" onClick={handleClose}>
                 Close
               </Button>
             </Modal.Footer>

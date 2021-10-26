@@ -27,7 +27,11 @@
 }
 /* 
 @media only screen and (max-width: 600px) {
-    .media-body {
-        display:block;
+    .headshot {
+        max-width: none;
+        width: 100%;
+        align-items: center;
+        display: block;
+        margin: 10px;
     }
 } */
