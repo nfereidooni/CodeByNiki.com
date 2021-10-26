@@ -31,7 +31,7 @@ h1 {
 }
 
 #portfolioCard:hover>.imageContainer {
-    filter: brightness(50%)
+    filter: opacity(80%)
 }
 
 .linkBtn {
