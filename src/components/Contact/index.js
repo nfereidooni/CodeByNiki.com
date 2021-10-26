@@ -16,9 +16,16 @@ function Contact(props) {
 
 
       <div className="button-group row">
-        <button className="button1 text-center" href="https://github.com/nfereidooni"><i class="fab fa-github"></i>  Github</button>
-        <button className="button1 text-center" href="https://www.linkedin.com/in/nfereidooni/"><i class="fab fa-linkedin"></i>  LinkedIn</button>
-        <button className="button1 text-center" href="mailto: nikifereidooni@gmail.com"><i class="far fa-envelope"></i>  Email</button>
+        <a href="https://github.com/nfereidooni" target="_blank">
+          <button className="button1 text-center"><i class="fab fa-github"></i>  Github</button>
+        </a>
+        <a href="https://www.linkedin.com/in/nfereidooni/" target="_blank">
+          <button className="button1 text-center"><i class="fab fa-linkedin"></i>  LinkedIn</button>
+        </a>
+        <a href="mailto: nikifereidooni@gmail.com" target="_blank">
+          <button className="button1 text-center"><i class="far fa-envelope"></i>  Email</button>
+        </a>
+        
       </div>
       
     </Container>
