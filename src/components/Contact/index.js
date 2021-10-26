@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css"
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 
 
 function Contact(props) {
@@ -16,16 +16,8 @@ function Contact(props) {
 
 
       <div className="button-group row">
-        <a href="https://github.com/nfereidooni" target="_blank">
-          <button className="button1 text-center"><i class="fab fa-github"></i>  Github</button>
-        </a>
-        <a href="https://www.linkedin.com/in/nfereidooni/" target="_blank">
-          <button className="button1 text-center"><i class="fab fa-linkedin"></i>  LinkedIn</button>
-        </a>
-        <a href="mailto: nikifereidooni@gmail.com" target="_blank">
-          <button className="button1 text-center"><i class="far fa-envelope"></i>  Email</button>
-        </a>
-        
+        <Button className="button1 text-center" href="https://github.com/nfereidooni" target="_blank"><i class="fab fa-github"></i>  Github</Button>
+        <Button className="button1 text-center" href="https://www.linkedin.com/in/nfereidooni/" target="_blank"><i class="fab fa-linkedin"></i>  LinkedIn</Button>
       </div>
       
     </Container>
