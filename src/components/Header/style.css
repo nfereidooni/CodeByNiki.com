@@ -3,11 +3,6 @@
   font-weight: 400;
   font-style: normal;
   font-size: 200%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .navLink {
