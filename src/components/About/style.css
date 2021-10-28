@@ -1,37 +1,10 @@
-.main {
-    margin-top: 100px;
-    height: 100%;
-    /* margin-bottom: 200px; */
-    padding-bottom: 150px;
-}
-
-.headshot {
-    max-width: 200px;
-    margin-right: 20px;
-    margin-bottom: 5px;
-    margin-top: 15px;
-
-}
-
-.contactBtn {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 .media-body p {
-    padding-top: 5px;
     font-size: 20px;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
 }
-/* 
+
 @media only screen and (max-width: 600px) {
     .headshot {
-        max-width: none;
-        width: 100%;
-        align-items: center;
-        display: block;
-        margin: 10px;
+        margin-bottom: 20px;
     }
-} */
+}
