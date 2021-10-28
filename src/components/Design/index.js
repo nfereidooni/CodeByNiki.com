@@ -28,7 +28,7 @@ const DESIGN_DATA = [
 
   {name: "Inform Physio",
   image: informphysio,
-  desc: "Website design for a physiotherapy clinic in Vaughan, including photography.",
+  desc: "Website design and custom photography for a physiotherapy clinic in Vaughan.",
   date: "2013-05-01",
   img1: inform1,
   img2: inform2,
@@ -36,7 +36,7 @@ const DESIGN_DATA = [
 
   {name: "Elect Natalie Hart",
   image: votenh,
-  desc: "Website/postcard/brochure design for municipal election candidate Natalie Hart.",
+  desc: "Website, postcard, and brochure design for Mississauga municipal election candidate Natalie Hart.",
   date: "2018-09-01",
   img1: nh1,
   img2: nh2,
@@ -44,7 +44,7 @@ const DESIGN_DATA = [
 
   {name: "Laval Martin Consulting",
   image: lmconsulting,
-  desc: "Website design for burnout prevention consulting services company.",
+  desc: "Website design for a burnout prevention consulting services company.",
   date: "2021-08-01",
   img1: lm1,
   img2: lm2,
@@ -52,7 +52,7 @@ const DESIGN_DATA = [
 
   {name: "Peri Matthew, Author",
   image: perimatthew,
-  desc: "Website/eBook/3D rendering design for author Peri Matthew.",
+  desc: "Website design, eBook and 3D renderings for author Peri Matthew.",
   date: "2020-05-01",
   img1: pm1,
   img2: pm2,
