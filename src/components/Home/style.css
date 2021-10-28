@@ -17,6 +17,7 @@
     padding-bottom: 0;
     color: white;
     text-align: center;
+    line-height: 1;
   }
 
 .home-h1 {
@@ -32,22 +33,25 @@
     font-family: rockwell,sans-serif;
     font-weight: 400;
     font-style: italic;
+    margin-top: 20px;
 }
-/* 
-.headshot-home {
-    max-width: 100px;
-    margin-right: 20px;
-    margin-bottom: 5px;
-    text-align: center;
-} */
 
 .duration {
     color:orange;
     text-decoration:brown;
 }
 
-/* @media only screen and (max-width: 600px) {
-    .media-p1 {
-      margin-top: 270px;
+@media only screen and (max-width: 600px) {
+    .main-home {
+      margin-right: 1px !important; 
+      margin-left: 1px !important;
+      /* margin-top: 100px; */
     }
-} */
+}    
+
+@media only screen and (max-width: 480px) {
+    .main-home {
+      margin-top: 50px;
+    }
+
+}
