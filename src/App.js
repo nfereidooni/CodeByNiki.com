@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Code from "./components/Code";
 import Design from "./components/Design";
 import About from "./components/About";
+import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
             </Route>
             <Route exact path="/about">
               <About />
+            </Route>
+            <Route path="/resume">
+              <Resume />
             </Route>
             <Route path="/contact">
               <Contact />

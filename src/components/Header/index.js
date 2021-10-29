@@ -28,6 +28,7 @@ function Header(props) {
             <NavLink className="navLink" to="/code" onClick={() => setExpanded(false)}>Code</NavLink> &nbsp; &nbsp;
             <NavLink className="navLink" to="/design" onClick={() => setExpanded(false)}>Design</NavLink> &nbsp; &nbsp;
             <NavLink className="navLink" to="/about" onClick={() => setExpanded(false)}>About</NavLink> &nbsp; &nbsp;
+            <NavLink className="navLink" to="/resume" onClick={() => setExpanded(false)}>Resume</NavLink> &nbsp; &nbsp;
             <NavLink className="navLink" to="/contact" onClick={() => setExpanded(false)}>Contact</NavLink>
           </Nav>
         </Navbar.Collapse>
