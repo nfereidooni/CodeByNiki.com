@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import "./style.css"
-import restaurantfinder from "../assets/img/restaurantfinder_sq.png"
+// import restaurantfinder from "../assets/img/restaurantfinder_sq.png"
 import flamegame from "../assets/img/flamegame_sq.png"
 import codequiz from "../assets/img/codequiz_sq.png"
 import eatdaburger from "../assets/img/eatdaburger_sq.png"
@@ -11,7 +11,7 @@ import CodeProject from "../CodeProject"
 
 // Import Modal Images
 
-import restaurantfinder2 from "../assets/img/restaurantfinder.PNG"
+// import restaurantfinder2 from "../assets/img/restaurantfinder.PNG"
 import flamegame2 from "../assets/img/flamegame.PNG"
 import codequiz2 from "../assets/img/codequiz.PNG"
 import eatdaburger2 from "../assets/img/eatdaburger.PNG"
@@ -30,13 +30,13 @@ const CODE_DATA = [
   vlink: "https://tranquil-temple-78360.herokuapp.com/",
   glink: "https://github.com/SSamoridny/Project-2-Flame-Game"},
 
-  {name: "What's for Dinner?",
-  sqimage: restaurantfinder,
-  image: restaurantfinder2,
-  desc: "A web application to help figure out life's most important question, 'What's for Dinner?' Built using the Yelp and Edamam APIs.",
-  date: "2020-09-29",
-  vlink: "https://ryanbrowne360.github.io/Project1/",
-  glink: "https://github.com/ryanbrowne360/Project1"},
+  // {name: "What's for Dinner?",
+  // sqimage: restaurantfinder,
+  // image: restaurantfinder2,
+  // desc: "A web application to help figure out life's most important question, 'What's for Dinner?' Built using the Yelp and Edamam APIs.",
+  // date: "2020-09-29",
+  // vlink: "https://ryanbrowne360.github.io/Project1/",
+  // glink: "https://github.com/ryanbrowne360/Project1"},
 
   {name: "Code Quiz",
   sqimage: codequiz,
