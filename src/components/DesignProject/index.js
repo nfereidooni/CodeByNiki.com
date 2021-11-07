@@ -13,7 +13,7 @@ function DesignProject(props) {
 
     <>
           <Card className="text-center justify-content-center" id="portfolioCardDes" onClick={handleShow}>
-            <div className="imageContainer">
+            <div className="imageContainerDes">
               <Card.Img variant="top" src={props.image} id="porfolioImg"/>
             </div>
             <div className="overlayContainer">
