@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css"
 import resumepdf from "../assets/Niki_Resume_Oct_2021.pdf"
-import resumedoc from "../assets/Niki_Resume_Oct_2021_Simple.docx"
+import resumedoc from "../assets/Niki_Resume_Oct_2021.docx"
 import { Container, Button } from "react-bootstrap";
 
 
@@ -14,7 +14,7 @@ function Resume(props) {
 
       <div className="button-group row">
         <Button className="buttonResume text-center" href={resumepdf}><i class="far fa-2x fa-file-pdf"></i> &nbsp; &nbsp;PDF Resume</Button>
-        <Button className="buttonResume text-center" href={resumedoc}><i class="far fa-2x fa-file-word"></i> &nbsp; &nbsp;Simple Resume</Button>
+        <Button className="buttonResume text-center" href={resumedoc}><i class="far fa-2x fa-file-word"></i> &nbsp; &nbsp;Word Resume</Button>
       </div>
       
     </Container>
