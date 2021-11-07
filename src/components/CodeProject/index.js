@@ -13,8 +13,8 @@ function CodeProject(props) {
   return(
 
       <>
-        <Card className="text-center justify-content-center" id="portfolioCard" onClick={handleShow}>
-          <div className="imageContainer">
+        <Card className="text-center justify-content-center" id="portfolioCardDes" onClick={handleShow}>
+          <div className="imageContainerDes">
             <Card.Img variant="top" src={props.sqimage} id="porfolioImg"/>
           </div>
           <div className="overlayContainer">

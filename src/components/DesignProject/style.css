@@ -7,7 +7,6 @@ h1 {
     font-size: 50px;
     margin-bottom: 50px;
     color: firebrick;
-
 }
 
 #portfolioCardDes {
@@ -26,8 +25,8 @@ h1 {
     color: white;
 }
 
-#portfolioCardDes:hover>.imageContainer {
-    filter: opacity(80%)
+#portfolioCardDes:hover>.imageContainerDes {
+    filter: opacity(70%)
 }
 
 .linkBtn {
