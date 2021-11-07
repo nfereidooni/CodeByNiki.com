@@ -10,7 +10,7 @@ function Contact(props) {
 
       <h1 className="pageTitle text-center"><b>Contact</b></h1>
       
-      <p className="contactBody text-center"><b>Email:</b> nikifereidooni@gmail.com</p>
+      <p className="contactBody text-center"><b>Email:</b> codebyniki@gmail.com</p>
       
       <p className="contactBody text-center"><b>Phone Number:</b> 416-735-6928</p>
 
