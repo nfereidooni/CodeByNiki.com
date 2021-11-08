@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css"
-import resumepdf from "../assets/Niki_Resume_Oct_2021.pdf"
-import resumedoc from "../assets/Niki_Resume_Oct_2021.docx"
+import resumepdf from "../assets/Niki_Fereidooni_Junior_Frontend_Resume.pdf"
+import resumedoc from "../assets/Niki_Fereidooni_Junior_Frontend_Resume.docx"
 import { Container, Button } from "react-bootstrap";
 
 
