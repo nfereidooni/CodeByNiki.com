@@ -9,14 +9,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="grid grid-cols-4 h-screen">
+      <body className="lg:flex lg:justify-between lg:gap-4">
         {/* Sidebar */}
-        <aside className="col-span-1 bg-gray-900 text-white">
+        <aside className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/4 lg:flex-col lg:justify-between lg:py-24">
           <LeftSidebar />
         </aside>
 
         {/* Main Content */}
-        <main className="col-span-3 overflow-y-auto">{children}</main>
+        <main className="lg:w-3/4">{children}</main>
       </body>
     </html>
   );

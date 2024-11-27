@@ -25,11 +25,6 @@ const LeftSidebar = () => {
               Projects
             </a>
           </li>
-          <li>
-            <a href="#contact" className="hover:text-teal-400">
-              Contact
-            </a>
-          </li>
         </ul>
       </nav>
     </aside>
