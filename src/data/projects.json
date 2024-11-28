@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Coffee Tracker",
+      "description": "A React app to log cortados and rate coffee shops. Features image uploads and location tagging.",
+      "technologies": ["React", "Tailwind", "Firebase"],
+      "link": "https://github.com/nikifereidooni/coffee-tracker"
+    },
+    {
+      "title": "Portfolio Redesign",
+      "description": "This portfolio you're viewing, built with Next.js, Tailwind CSS, and featuring parallax scrolling.",
+      "technologies": ["Next.js", "Tailwind", "React"],
+      "link": "https://github.com/nikifereidooni/portfolio"
+    },
+    {
+      "title": "Weather App",
+      "description": "A weather forecasting app using OpenWeatherMap API, complete with a clean, minimalist UI.",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "link": "https://github.com/nikifereidooni/weather-app"
+    }
+  ]
+  

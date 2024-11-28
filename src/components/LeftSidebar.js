@@ -11,17 +11,17 @@ const LeftSidebar = () => {
       <nav className="mt-8">
         <ul className="flex flex-col space-y-4">
           <li>
-            <a href="#about" className="hover:text-teal-400">
+            <a href="#about" className="hover:text-pink-400">
               About
             </a>
           </li>
           <li>
-            <a href="#experience" className="hover:text-teal-400">
+            <a href="#experience" className="hover:text-pink-400">
               Experience
             </a>
           </li>
           <li>
-            <a href="#projects" className="hover:text-teal-400">
+            <a href="#projects" className="hover:text-pink-400">
               Projects
             </a>
           </li>

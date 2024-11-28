@@ -1,20 +1,25 @@
+import projects from "@/data/projects.json";
+import ProjectCard from "@/components/ProjectCard";
 import { Parallax } from "react-scroll-parallax";
 
 export default function Projects() {
   return (
-    <Parallax speed={0}>
+    <Parallax speed={-5}>
       <section id="projects" className="min-h-screen flex flex-col justify-center">
-        <h1 className="text-4xl font-bold">Projects</h1>
-        <ul className="mt-4 space-y-4">
-          <li>
-            <h2 className="text-2xl font-semibold">Coffee Tracker</h2>
-            <p>A React app to log cortados and rate coffee shops.</p>
-          </li>
-          <li>
-            <h2 className="text-2xl font-semibold">Portfolio</h2>
-            <p>Your current portfolio built with Next.js and Tailwind.</p>
-          </li>
-        </ul>
+        <div className="container mx-auto px-4 py-16">
+          <h2 className="text-3xl font-bold mb-8 text-white">Projects</h2>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                technologies={project.technologies || []}
+                link={project.link}
+              />
+            ))}
+          </div>
+        </div>
       </section>
     </Parallax>
   );
