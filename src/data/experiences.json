@@ -1,19 +1,50 @@
 [
-    {
-      "timeframe": "2022 — Present",
-      "role": "Frontend Developer",
-      "company": "SearchKings",
-      "companyLink": "https://www.searchkings.com",
-      "description": "Develop and maintain lead-generation websites using modern frameworks, with a strong focus on clean code, accessibility, and performance optimization.",
-      "technologies": ["JavaScript", "Liquid", "Tailwind"]
-    },
-    {
-      "timeframe": "2024 — Present",
-      "role": "Organizer",
-      "company": "TechTank",
-      "companyLink": "https://www.techtankto.com/",
-      "description": "Host monthly coffee chats to foster inclusivity and provide support for women and non-binary professionals in tech through the Code Diversity initiative.",
-      "technologies": []
-    }
+  {
+    "timeframe": "2022 — Present",
+    "role": "Frontend Developer",
+    "company": "SearchKings",
+    "companyLink": "https://www.searchkings.com",
+    "description": "Develop and maintain lead-generation websites using modern frameworks, with a strong focus on clean code, accessibility, and performance optimization.",
+    "technologies": ["JavaScript", "Tailwind", "HTML & SCSS", "Wordpress", "Shopify", "Jekyll", "Node.js", "PHP"]
+  },
+  {
+    "timeframe": "2024 — Present",
+    "role": "Organizer",
+    "company": "TechTank",
+    "companyLink": "https://www.techtankto.com/",
+    "description": "Host monthly coffee chats to foster inclusivity and provide support for women and non-binary professionals in tech through the Code Diversity initiative.",
+    "technologies": ["Community", "Event Planning", "Mentorship"]
+  },
+  {
+    "timeframe": "Jan 2020 — Sep 2020",
+    "role": "Assistant Manager, UX Team, PLM",
+    "company": "Loblaw Companies Limited",
+    "companyLink": "https://www.loblaw.ca/",
+    "description": "Coordinated and led user experience sessions with internal and external users for the development of a new Project Lifecycle Management system. Conducted user acceptance testing managed with JIRA, ensured packaging portal requirements were met, and led daily UX team meetings.",
+    "technologies": ["JIRA", "UX Research"]
+  },
+  {
+    "timeframe": "Oct 2017 — Jan 2020",
+    "role": "Assistant Packaging Manager",
+    "company": "Loblaw Companies Limited",
+    "companyLink": "https://www.loblaw.ca/",
+    "description": "Managed and grew the Loblaw Brand Printer Program, collaborated with printers to ensure high-quality printing, and improved packaging specifications for sustainability initiatives. Achieved 100% compliance for new product specifications and led data integrity improvements for new systems.",
+    "technologies": ["Process Mapping", "Sustainability Compliance"]
+  },
+  {
+    "timeframe": "May 2014 — Oct 2017",
+    "role": "Project Manager",
+    "company": "Schawk!",
+    "companyLink": "https://www.sgkinc.com/",
+    "description": "Managed packaging and collateral projects for multiple large clients across various industries. Coordinated with design, color, and prepress teams while maintaining client relationships and managing project timelines using graphics approval systems.",
+    "technologies": ["Project Management", "Prepress"]
+  },
+  {
+    "timeframe": "Apr 2013 — Jul 2013",
+    "role": "Project Coordinator Intern",
+    "company": "Jar Creative",
+    "companyLink": "https://www.linkedin.com/company/jar-creative/",
+    "description": "Assisted with web project management, performed QA on deliverables, and ensured accurate invoicing and project documentation. Created and executed project work plans, adapting to changing needs.",
+    "technologies": ["Project Management", "Wordpress", "Magento"]
+  }
 ]
-  

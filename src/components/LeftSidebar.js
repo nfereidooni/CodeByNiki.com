@@ -13,24 +13,24 @@ const LeftSidebar = () => {
         className="rounded-full mb-4"
       />
       <h1 className="text-4xl font-bold">Niki Fereidooni</h1>
-      <p className="text-xl mt-2">Front End Developer</p>
-      <p className="mt-4">
+      <p className="text-xl mt-2 font-normal">Front End Developer</p>
+      <p className="mt-4 font-normal">
         Crafting elegant, accessible web solutions with precision and care.
       </p>
       <nav className="mt-8">
         <ul className="flex flex-col space-y-4">
           <li>
-            <a href="#about" className="hover:text-pink-400">
+            <a href="#about" className="font-normal hover:text-pink-400">
               About
             </a>
           </li>
           <li>
-            <a href="#experience" className="hover:text-pink-400">
+            <a href="#experience" className="font-normal hover:text-pink-400">
               Experience
             </a>
           </li>
           <li>
-            <a href="#projects" className="hover:text-pink-400">
+            <a href="#projects" className="font-normal hover:text-pink-400">
               Projects
             </a>
           </li>

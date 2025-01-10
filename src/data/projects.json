@@ -1,21 +1,44 @@
 [
-    {
-      "title": "Coffee Tracker",
-      "description": "A React app to log cortados and rate coffee shops. Features image uploads and location tagging.",
-      "technologies": ["React", "Tailwind", "Firebase"],
-      "link": "https://github.com/nikifereidooni/coffee-tracker"
-    },
-    {
-      "title": "Portfolio Redesign",
-      "description": "This portfolio you're viewing, built with Next.js, Tailwind CSS, and featuring parallax scrolling.",
-      "technologies": ["Next.js", "Tailwind", "React"],
-      "link": "https://github.com/nikifereidooni/portfolio"
-    },
-    {
-      "title": "Weather App",
-      "description": "A weather forecasting app using OpenWeatherMap API, complete with a clean, minimalist UI.",
-      "technologies": ["JavaScript", "HTML", "CSS"],
-      "link": "https://github.com/nikifereidooni/weather-app"
-    }
-  ]
-  
+  {
+    "title": "Portfolio Redesign",
+    "description": "This portfolio you're viewing, built with Next.js and Tailwind CSS.",
+    "technologies": ["Next.js", "Tailwind", "React"],
+    "github_link": "https://github.com/nikifereidooni/portfolio",
+    "deployment_link": "http://www.codebyniki.com"
+  },
+  {
+    "title": "Flame Game",
+    "description": "An e-commerce website with functioning add-to-cart and checkout features, using mySQL & Express.",
+    "technologies": ["MySQL", "Express", "Node.js"],
+    "github_link": "https://github.com/SSamoridny/Project-2-Flame-Game",
+    "deployment_link": "https://tranquil-temple-78360.herokuapp.com/"
+  },
+  {
+    "title": "Code Quiz",
+    "description": "An interactive timed coding quiz to test your skills, with a highscores page. Built using jQuery and local storage.",
+    "technologies": ["JavaScript", "jQuery", "HTML", "CSS"],
+    "github_link": "https://github.com/nfereidooni/nf_code_quiz",
+    "deployment_link": "https://nfereidooni.github.io/nf_code_quiz/"
+  },
+  {
+    "title": "Eat-Da-Burger",
+    "description": "A burger-eating app where you can add and eat custom burgers. Built using mySQL and Express Handlebars.",
+    "technologies": ["MySQL", "Express", "Handlebars"],
+    "github_link": "https://github.com/nfereidooni/nf_node_express_handlebars",
+    "deployment_link": "https://infinite-scrubland-34308.herokuapp.com/"
+  },
+  {
+    "title": "Workday Scheduler",
+    "description": "A web application to help you schedule your workday. Built using Moment.js to display the current time and local storage.",
+    "technologies": ["JavaScript", "Moment.js", "HTML", "CSS"],
+    "github_link": "https://github.com/nfereidooni/nf_workday_scheduler",
+    "deployment_link": "https://nfereidooni.github.io/nf_workday_scheduler/"
+  },
+  {
+    "title": "Weather Dashboard",
+    "description": "A weather dashboard that uses OpenWeather API to retrieve weather data for cities and maintains a search history using local storage.",
+    "technologies": ["JavaScript", "HTML", "CSS", "OpenWeather API"],
+    "github_link": "https://github.com/nfereidooni/nf_weather_dashboard",
+    "deployment_link": "https://nfereidooni.github.io/nf_weather_dashboard/Assets/index.html"
+  }
+]
