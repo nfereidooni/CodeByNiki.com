@@ -4,7 +4,7 @@ import Headshot from '../../public/images/niki-headshot-circle.png'
 
 const LeftSidebar = () => {
   return (
-    <aside className="fixed left-0 top-0 h-full w-1/4 bg-gray-900 text-white p-8 flex flex-col justify-center">
+    <aside className="md:fixed md:left-0 md:top-0 md:h-full w-full md:w-1/2 lg:w-1/4 bg-gray-900 text-white p-8 md:flex md:flex-col md:justify-center">
       <Image 
         src={Headshot} 
         alt="Niki Fereidooni headshot" 
