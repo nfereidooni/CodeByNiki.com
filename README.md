@@ -1,24 +1,72 @@
-# React Portfolio
+# Next.js Portfolio
 
 ## Table of Contents
 - [Description](#description)
+- [Technologies & Features](#technologies--features)
 - [Installation](#installation)
-- [Credits](#credits)
+- [View Live](#view-live)
 - [License](#license)
 - [Questions](#questions)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description: 
-This project is my development portfolio, which has been created using React.
+
+This project is my development portfolio, created using [Next.js](https://nextjs.org). It showcases my projects, technical skills, and experience in web development.
+
+## Technologies & Features
+
+- **Framework:** Next.js (React-based)
+- **Styling:** Tailwind CSS, PostCSS
+- **Data:** JSON-based data for projects and experience
+- **Components:** Modular React components for easy updates
+- **Deployment:** Easily deployed to Vercel or other hosting platforms
+- **Responsive Design:** Optimized layouts for desktop and mobile
+
 ## Installation:
-View on my custom domain: http://www.codebyniki.com
-## Credits:
-My coding mentor, [Darga](http://www.github.com/dargaCode), as well as Fil & David, my course instructors.
+
+1. **Clone the repository:**  
+```bash
+git clone https://github.com/nfereidooni/portfolio-nextjs.git
+cd portfolio-nextjs
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. **Run the development server:**
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+4. **View in browser**
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## View Live
+
+You can also view this portfolio at [codebyniki.com](http://www.codebyniki.com).
+
 ## License:
 MIT LICENSE
 
-Copyright (c) [2024] [Niki Fereidooni]
+Copyright (c) [2025] [Niki Fereidooni]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -37,44 +85,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 ## Questions:
 For questions about this project, please visit my GitHub page:
 - [GitHub Profile](https://github.com/nfereidooni)
-
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
