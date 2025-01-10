@@ -8,7 +8,7 @@ import Projects from "./projects/page";
 export default function Home() {
   return (
     <RightContent>
-      <div className="flex flex-col space-y-32 px-8 pt-24 lg:py-24">
+      <div className="flex flex-col md:space-y-32 md:px-8 md:pt-24 lg:py-24">
         {/* About Section */}
           <About/>
 
