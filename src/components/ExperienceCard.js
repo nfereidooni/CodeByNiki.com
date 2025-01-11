@@ -6,7 +6,7 @@ export default function ExperienceCard({ timeframe, role, company, companyLink, 
       href={companyLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative block p-6 bg-gray-800 rounded-lg shadow-md transition hover:shadow-lg hover:bg-gray-700"
+      className="group relative block p-6 bg-gray-800 rounded-lg shadow-md transition hover:shadow-lg hover:bg-gray-700 focus:shadow-lg focus:bg-gray-700"
       aria-label={`Visit ${company}`}
     >
       {/* Timeframe */}
@@ -15,7 +15,7 @@ export default function ExperienceCard({ timeframe, role, company, companyLink, 
       </header>
 
       {/* Role and Company */}
-      <h3 className="text-lg font-bold text-white group-hover:text-pink-300">
+      <h3 className="text-lg font-bold text-white group-hover:text-pink-300 group-focus:text-pink-300">
         {role} · {company}
       </h3>
 

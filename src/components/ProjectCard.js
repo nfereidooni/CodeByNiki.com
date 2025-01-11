@@ -2,7 +2,7 @@ import DiagonalArrow from "@/components/icons/DiagonalArrow";
 
 export default function ProjectCard({ title, description, technologies, githubLink, deploymentLink }) {
   return (
-    <div className="group relative flex flex-col bg-gray-800 rounded-lg shadow-md transition hover:shadow-lg hover:bg-gray-700">
+    <div className="group relative flex flex-col bg-gray-800 rounded-lg shadow-md transition hover:shadow-lg hover:bg-gray-700 focus:shadow-lg focus:bg-gray-700">
       {/* Clickable Deployment Link */}
       <a
         href={deploymentLink}
@@ -12,7 +12,7 @@ export default function ProjectCard({ title, description, technologies, githubLi
         aria-label="View Live Deployment"
       >
         {/* Title */}
-        <h3 className="text-lg font-bold text-white group-hover:text-pink-300">
+        <h3 className="text-lg font-bold text-white group-hover:text-pink-300 group-focus:text-pink-300">
           {title}
         </h3>
 
