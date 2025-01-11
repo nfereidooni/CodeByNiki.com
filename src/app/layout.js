@@ -5,6 +5,9 @@ import { Inter } from "next/font/google";
 export const metadata = {
   title: "Niki Fereidooni Portfolio",
   description: "Frontend Developer Portfolio",
+  icons: {
+    icon: "/favicon.ico" 
+  }
 };
 
 const inter = Inter({
