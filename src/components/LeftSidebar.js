@@ -1,5 +1,7 @@
 import React from "react";
 import Image from 'next/image';
+import GithubIcon from "@/components/icons/GithubIcon";
+import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import Headshot from '../../public/images/niki-headshot-circle.png'
 
 const LeftSidebar = () => {
@@ -20,22 +22,30 @@ const LeftSidebar = () => {
       <nav className="mt-8">
         <ul className="flex flex-col space-y-4">
           <li>
-            <a href="#about" className="font-normal hover:text-pink-400">
+            <a href="#about" className="font-normal hover:text-pink-300 focus:text-pink-300">
               About
             </a>
           </li>
           <li>
-            <a href="#experience" className="font-normal hover:text-pink-400">
+            <a href="#experience" className="font-normal hover:text-pink-300 focus:text-pink-300">
               Experience
             </a>
           </li>
           <li>
-            <a href="#projects" className="font-normal hover:text-pink-400">
+            <a href="#projects" className="font-normal hover:text-pink-300 focus:text-pink-300">
               Projects
             </a>
           </li>
         </ul>
       </nav>
+      <div className="mt-8 flex space-x-4">
+        <a href="https://github.com/nfereidooni" target="_blank" rel="noopener noreferrer" className="w-6 h-6 text-white transition-colors fill-white hover:fill-pink-300 focus:fill-pink-300">
+          <GithubIcon className="w-6 h-6 text-white" />
+        </a>
+        <a href="https://linkedin.com/in/nfereidooni" target="_blank" rel="noopener noreferrer" className="w-6 h-6 text-white transition-colors fill-white hover:fill-pink-300 focus:fill-pink-300">
+          <LinkedInIcon className="w-6 h-6 text-white" />
+        </a>
+      </div>
     </aside>
   );
 };
