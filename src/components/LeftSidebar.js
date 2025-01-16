@@ -39,10 +39,10 @@ const LeftSidebar = () => {
         </ul>
       </nav>
       <div className="mt-8 flex space-x-4">
-        <a href="https://github.com/nfereidooni" target="_blank" rel="noopener noreferrer" className="w-6 h-6 text-white transition-colors fill-white hover:fill-pink-300 focus:fill-pink-300">
+        <a href="https://github.com/nfereidooni" target="_blank" rel="noopener noreferrer" className="w-6 h-6 text-white transition-colors fill-white hover:fill-pink-300 focus:fill-pink-300" aria-label="GitHub Profile">
           <GithubIcon className="w-6 h-6 text-white" />
         </a>
-        <a href="https://linkedin.com/in/nfereidooni" target="_blank" rel="noopener noreferrer" className="w-6 h-6 text-white transition-colors fill-white hover:fill-pink-300 focus:fill-pink-300">
+        <a href="https://linkedin.com/in/nfereidooni" target="_blank" rel="noopener noreferrer" className="w-6 h-6 text-white transition-colors fill-white hover:fill-pink-300 focus:fill-pink-300" aria-label="LinkedIn Profile">
           <LinkedInIcon className="w-6 h-6 text-white" />
         </a>
       </div>

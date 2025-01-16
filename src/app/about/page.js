@@ -2,7 +2,7 @@ export default function About() {
   return (
       <section id="about" className="py-50 flex flex-col justify-center">
         <div className="container mx-auto px-4 py-16">
-          <h1 className="text-xl md:text-3xl font-bold mb-8 text-white">About Me</h1>
+          <h2 className="text-xl md:text-3xl font-bold mb-8 text-white">About Me</h2>
           <div className="mt-4 text-lg">
               <p className="mb-2 text-base md:text-lg">I’m a web developer passionate about crafting accessible, high-performance websites that combine thoughtful design with efficient, scalable code. I thrive on creating digital experiences that are visually appealing, user-friendly, and optimized for speed and performance.</p>
 
