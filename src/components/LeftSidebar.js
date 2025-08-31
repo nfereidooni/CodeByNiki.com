@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image';
 import GithubIcon from "@/components/icons/GithubIcon";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
-import Headshot from '../../public/images/niki-headshot-circle.png'
+import Headshot from '../../public/images/niki-headshot-circle.webp'
 
 const LeftSidebar = () => {
   return (
