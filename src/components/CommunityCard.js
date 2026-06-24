@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useTheme } from '@/context/ThemeContext';
 
@@ -37,10 +38,12 @@ export default function CommunityCard({ initiative }) {
         {/* Title with Logo */}
         <div className="flex items-center gap-2 mb-1">
           {initiative.logo && (
-            <img
+            <Image
               src={theme === 'dark' ? initiative.logo.replace('-light', '-dark') : initiative.logo}
               alt={`${initiative.name} logo`}
-              className="w-5 h-5 flex-shrink-0"
+              width={20}
+              height={20}
+              className="flex-shrink-0"
             />
           )}
           <h3 className="text-base font-semibold text-light-text dark:text-white group-hover:text-light-accent dark:group-hover:text-dark-accent transition">

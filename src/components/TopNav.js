@@ -10,8 +10,6 @@ export default function TopNav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, toggleTheme, mounted } = useTheme();
 
-  if (pathname.startsWith('/v1')) return null;
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['about', 'experience', 'projects', 'community'];
@@ -41,7 +39,7 @@ export default function TopNav() {
     }
   };
 
-  if (!mounted) return null;
+  if (!mounted || pathname.startsWith('/v1')) return null;
 
   return (
     <nav className="sticky top-0 z-50 bg-light-bg-secondary dark:bg-dark-bg backdrop-blur-sm border-b border-light-border dark:border-dark-border transition-colors">
