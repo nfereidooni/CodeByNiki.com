@@ -1,19 +1,35 @@
 [
   {
-    "timeframe": "Apr 2025 — Present",
+    "timeframe": "Jan 2026 — Present",
+    "role": "Senior Developer",
+    "company": "Docebo",
+    "companyLink": "https://www.docebo.com",
+    "description": "Build and maintain Docebo’s marketing sites with modern WordPress development, taking increased ownership of technical strategy and system architecture. Develop custom Gutenberg blocks in React, manage database operations with WP CLI, and prioritize scalability and performance. Collaborate with design, marketing, and product teams while exploring AI-driven workflows for content and optimization.",
+    "technologies": ["WordPress", "Gutenberg", "React", "PHP", "WP CLI", "JavaScript", "AI"]
+  },
+  {
+    "timeframe": "Apr 2025 — Jan 2026",
     "role": "Web Developer",
     "company": "Docebo",
     "companyLink": "https://www.docebo.com",
-    "description": "Build and maintain Docebo’s marketing sites with modern WordPress development. Develop custom Gutenberg blocks in React and Tailwind, prioritizing accessibility, scalability, and performance. Collaborate with design, marketing, and product teams while exploring AI-driven workflows for content and accessibility.",
-    "technologies": ["WordPress", "Gutenberg", "React", "Tailwind", "JavaScript", "Accessibility", "AI"]
+    "description": "Built and maintained Docebo’s marketing sites with modern WordPress development. Developed custom Gutenberg blocks in React, managed database operations with WP CLI, and prioritized scalability and performance. Collaborated with design, marketing, and product teams while exploring AI-driven workflows for content and optimization.",
+    "technologies": ["WordPress", "Gutenberg", "React", "PHP", "WP CLI", "JavaScript", "AI"]
   },
   {
     "timeframe": "Oct 2024 — Present",
-    "role": "Organizer",
+    "role": "Co-Chair / Lead Event Organizer",
     "company": "TechTank",
     "companyLink": "https://www.techtankto.com/",
-    "description": "Organize and host community events across Toronto’s tech ecosystem, including Code Diversity and other initiatives. Helped bring TechTank programming to Toronto Tech Week 2025.",
-    "technologies": ["Community", "Event Planning", "Mentorship"]
+    "description": "Co-chair the board and lead event organization across Toronto’s tech ecosystem. Spearhead Code Diversity (monthly community gatherings for women and gender-diverse folks in tech), Tech Talks, Build Night TO, and other initiatives. Helped bring TechTank programming to Toronto Tech Week 2025 and guide strategic direction for community programming.",
+    "technologies": ["Community Leadership", "Event Strategy", "Mentorship", "Board Governance"]
+  },
+  {
+    "timeframe": "Jan 2026 — Present",
+    "role": "Board Secretary",
+    "company": "Life After Burns",
+    "companyLink": "https://lifeafterburns.org/",
+    "description": "Serve as secretary on the board of Life After Burns, supporting the organization’s mission to help burn survivors heal and rebuild their lives. Contribute to strategic planning and governance while helping coordinate board communications and initiatives.",
+    "technologies": ["Board Governance", "Community Support", "Nonprofit Leadership"]
   },
   {
     "timeframe": "Feb 2022 — Mar 2025",

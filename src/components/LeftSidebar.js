@@ -22,17 +22,17 @@ const LeftSidebar = () => {
       <nav className="mt-8">
         <ul className="flex flex-col space-y-4">
           <li>
-            <a href="#about" className="font-normal hover:text-pink-300 focus:text-pink-300">
+            <a href="#about" className="font-normal hover:text-light-accent dark:text-dark-accent focus:text-light-accent dark:text-dark-accent">
               About
             </a>
           </li>
           <li>
-            <a href="#experience" className="font-normal hover:text-pink-300 focus:text-pink-300">
+            <a href="#experience" className="font-normal hover:text-light-accent dark:text-dark-accent focus:text-light-accent dark:text-dark-accent">
               Experience
             </a>
           </li>
           <li>
-            <a href="#projects" className="font-normal hover:text-pink-300 focus:text-pink-300">
+            <a href="#projects" className="font-normal hover:text-light-accent dark:text-dark-accent focus:text-light-accent dark:text-dark-accent">
               Projects
             </a>
           </li>

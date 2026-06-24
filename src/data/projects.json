@@ -1,17 +1,31 @@
 [
   {
-    "title": "Portfolio Redesign",
-    "description": "This portfolio you're viewing, built with Next.js and Tailwind CSS.",
-    "technologies": ["Next.js", "Tailwind", "React"],
+    "title": "Portfolio Redesign v2",
+    "description": "A major redesign focusing on visual impact and interactions. Light/dark mode, smooth animations, and nature-inspired forest palette. Built with Next.js, Tailwind CSS, and Framer Motion.",
+    "technologies": ["Next.js", "Tailwind", "React", "Framer Motion"],
     "github_link": "https://github.com/nfereidooni/CodeByNiki.com",
-    "deployment_link": "http://www.codebyniki.com"
+    "deployment_link": "https://www.codebyniki.com"
   },
   {
-    "title": "Flame Game",
-    "description": "An e-commerce website with functioning add-to-cart and checkout features, using mySQL & Express.",
-    "technologies": ["MySQL", "Express", "Node.js"],
-    "github_link": "https://github.com/SSamoridny/Project-2-Flame-Game",
-    "deployment_link": "https://tranquil-temple-78360.herokuapp.com/"
+    "title": "My Jane's Walk",
+    "description": "A scheduling and exploration app for Jane's Walk, a global festival of walking tours. Built with React and Vite. Jane's Walk Toronto was inspired by this project and built their own version, now live at their official site.",
+    "technologies": ["React", "Vite", "JavaScript", "CSS"],
+    "github_link": "https://github.com/nfereidooni/my-janes-walk-app-2026",
+    "deployment_link": "https://my-janes-walk-app-2026.vercel.app/"
+  },
+  {
+    "title": "TechTank Website",
+    "description": "Open-source community website for Toronto's tech and startup community. Contributor and maintainer, writing content and managing code updates. Built with Next.js and hosted on Vercel.",
+    "technologies": ["Next.js", "React", "Tailwind", "Open Source"],
+    "github_link": "https://github.com/tech-tankorg/techtank-next",
+    "deployment_link": "https://techtankto.com"
+  },
+  {
+    "title": "Portfolio Redesign v1",
+    "description": "The previous iteration of this portfolio. A sidebar-based design with a focus on simplicity and clean typography.",
+    "technologies": ["Next.js", "Tailwind", "React"],
+    "github_link": "https://github.com/nfereidooni/CodeByNiki.com",
+    "deployment_link": "https://www.codebyniki.com/v1"
   },
   {
     "title": "Code Quiz",

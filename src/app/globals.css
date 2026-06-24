@@ -3,21 +3,65 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
   --font-inter: 'Inter', sans-serif;
+
+  /* Forest palette - shared */
+  --forest-dark: #0f1a0c;
+  --forest-green-dark: #1a2e14;
+  --forest-green: #2d5016;
+  --forest-green-light: #3d6e1f;
+  --forest-green-lighter: #4a8f2e;
+  --forest-brown: #6b4423;
+  --forest-brown-light: #8b5a2b;
+
+  /* Light Mode */
+  --light-bg: #f9f8f5;
+  --light-bg-secondary: #f0ede8;
+  --light-text: #1a1a1a;
+  --light-text-muted: #666666;
+  --light-border: #e0dcd5;
+  --light-accent: #2d5016;
+
+  /* Dark Mode */
+  --dark-bg: #0f1a0c;
+  --dark-bg-secondary: #1a2e14;
+  --dark-text: #f5f1e8;
+  --dark-text-muted: #b0ada5;
+  --dark-border: #fbcfe8;
+  --dark-accent: #fbcfe8;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply transition-colors duration-300;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-inter);
-  font-weight: 200;
+@layer components {
+  .max-w-6xl {
+    @apply mx-auto;
+  }
+
+  /* Light mode styles */
+  [data-theme="light"] {
+    --bg: var(--light-bg);
+    --bg-secondary: var(--light-bg-secondary);
+    --text: var(--light-text);
+    --text-muted: var(--light-text-muted);
+    --border: var(--light-border);
+    --accent: var(--light-accent);
+    @apply bg-light-bg text-light-text;
+  }
+
+  /* Dark mode styles (default) */
+  [data-theme="dark"],
+  :root:not([data-theme="light"]) {
+    --bg: var(--dark-bg);
+    --bg-secondary: var(--dark-bg-secondary);
+    --text: var(--dark-text);
+    --text-muted: var(--dark-text-muted);
+    --border: var(--dark-border);
+    --accent: var(--dark-accent);
+    @apply bg-dark-bg text-dark-text;
+  }
 }

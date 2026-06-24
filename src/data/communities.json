@@ -1,0 +1,50 @@
+{
+  "techtank": {
+    "name": "TechTank",
+    "link": "https://www.techtankto.com",
+    "description": "Toronto's tech and startup community infrastructure I help run year-round",
+    "initiatives": [
+      {
+        "id": "code-diversity",
+        "name": "Code Diversity",
+        "tagline": "Monthly coffee chats for women & gender-diverse folks in tech",
+        "description": "A recurring space designed to build connection and support among women and gender-diverse people in the Toronto tech community. We gather monthly to chat, share experiences, and build genuine relationships.",
+        "frequency": "Monthly",
+        "audience": ["Women in tech", "Gender-diverse engineers", "Community"],
+        "link": "https://www.techtankto.com",
+        "logo": "/logos/techtank-fish-light.svg",
+        "video": "/videos/techtankto_3872527193918206449.mp4"
+      },
+      {
+        "id": "build-night-to",
+        "name": "Build Night TO",
+        "tagline": "Toronto is full of people building incredible things. This is a space to do it together.",
+        "description": "An evening of building, collaboration, and community. Bring your existing project, startup idea, AI workflow, app, website, or side project—or just your curiosity. Enjoy open build time, community demos, and meet fellow builders. Whether you're shipping code, designing a product, or exploring new tools, you'll be surrounded by ambitious people doing the same.",
+        "frequency": "Regular",
+        "audience": ["Developers", "Designers", "Builders", "Anyone ambitious"],
+        "link": "https://www.techtankto.com",
+        "logo": "/logos/techtank-fish-light.svg"
+      },
+      {
+        "id": "tech-talks",
+        "name": "TechTank Tech Talks",
+        "tagline": "Deep dives into tech topics & founder stories",
+        "description": "Bi-monthly talks featuring speakers from the Toronto tech community. We explore emerging technologies, share founder stories, and discuss the future of tech in Toronto.",
+        "frequency": "Every 1-2 months",
+        "audience": ["Tech community", "Founders", "Everyone interested in tech"],
+        "link": "https://www.techtankto.com",
+        "logo": "/logos/techtank-fish-light.svg",
+        "video": "/videos/techtankto_DZWPNciI8eO.mp4"
+      }
+    ]
+  },
+  "girlsWithBigIdeas": {
+    "id": "girls-with-big-ideas",
+    "name": "Girls with Big Ideas",
+    "link": "https://luma.com/qyw4ntm7",
+    "tagline": "Space for early-stage founders to find cofounders",
+    "description": "An event series for women and gender-diverse founders to connect with potential co-founders and build teams together.",
+    "lumaLink": "https://luma.com/user/usr-FMK9myXYLd2f8ll",
+    "video": "/videos/girls-with-big-ideas.mp4"
+  }
+}

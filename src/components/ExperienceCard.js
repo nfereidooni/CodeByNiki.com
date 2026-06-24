@@ -6,37 +6,43 @@ export default function ExperienceCard({ timeframe, role, company, companyLink, 
       href={companyLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative block p-6 bg-gray-800 rounded-lg shadow-md transition hover:shadow-lg hover:bg-gray-700 focus:shadow-lg focus:bg-gray-700"
+      className="group relative block rounded-lg overflow-hidden shadow-lg transition hover:shadow-2xl bg-light-bg dark:bg-dark-bg-secondary border border-light-border dark:border-dark-accent"
       aria-label={`Visit ${company}`}
     >
-      {/* Timeframe */}
-      <header className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-400">
-        {timeframe}
-      </header>
+      <div className="p-6 hover:bg-light-border/50 dark:hover:bg-dark-accent/10 transition">
+        {/* Timeframe */}
+        <header className="mb-2 text-xs font-semibold uppercase tracking-wide text-light-accent dark:text-dark-accent">
+          {timeframe}
+        </header>
 
-      {/* Role and Company */}
-      <h3 className="text-lg font-bold text-white group-hover:text-pink-300 group-focus:text-pink-300">
-        {role} · {company}
-      </h3>
+        {/* Role and Company */}
+        <h3 className="text-base font-semibold text-light-text dark:text-white mb-3 group-hover:text-light-accent dark:group-hover:text-dark-accent transition">
+          {role} · {company}
+        </h3>
 
-      {/* Description */}
-      <p className="mt-2 text-sm text-gray-300 leading-normal">{description}</p>
+        {/* Description */}
+        <p className="text-sm text-light-text/70 dark:text-gray-200 mb-4 leading-relaxed">
+          {description}
+        </p>
 
-      {/* Technologies */}
-      {technologies && (
-        <ul className="mt-4 flex flex-wrap" aria-label="Technologies used">
-          {technologies.map((tech, i) => (
-            <li key={i} className="mr-2 mt-2">
-              <span className="px-3 py-1 text-xs font-medium bg-pink-400/10 text-pink-300 rounded-full">
-                {tech}
-              </span>
-            </li>
-          ))}
-        </ul>
-      )}
+        {/* Technologies */}
+        {technologies && (
+          <ul className="flex flex-wrap gap-2" aria-label="Technologies used">
+            {technologies.map((tech, i) => (
+              <li key={i}>
+                <span className="px-2.5 py-1 text-xs font-medium bg-light-accent text-white dark:bg-dark-accent dark:text-dark-bg rounded-full">
+                  {tech}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
 
-      {/* Diagonal Arrow */}
-      <DiagonalArrow />
+        {/* Arrow */}
+        <div className="mt-4">
+          <DiagonalArrow />
+        </div>
+      </div>
     </a>
   );
 }

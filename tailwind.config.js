@@ -10,8 +10,30 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+
+        // Light mode colors
+        "light-bg": "var(--light-bg)",
+        "light-bg-secondary": "var(--light-bg-secondary)",
+        "light-text": "var(--light-text)",
+        "light-text-muted": "var(--light-text-muted)",
+        "light-border": "var(--light-border)",
+        "light-accent": "var(--light-accent)",
+
+        // Dark mode colors
+        "dark-bg": "var(--dark-bg)",
+        "dark-bg-secondary": "var(--dark-bg-secondary)",
+        "dark-text": "var(--dark-text)",
+        "dark-text-muted": "var(--dark-text-muted)",
+        "dark-border": "var(--dark-border)",
+        "dark-accent": "var(--dark-accent)",
+
+        // Forest palette
+        "forest-green": "var(--forest-green)",
+        "forest-green-light": "var(--forest-green-light)",
+        "forest-green-lighter": "var(--forest-green-lighter)",
       },
     },
   },
   plugins: [],
+  darkMode: ['selector', '[data-theme="dark"]'],
 };

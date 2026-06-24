@@ -1,12 +1,13 @@
 import "./globals.css";
-import LeftSidebar from "@/components/LeftSidebar";
+import TopNav from "@/components/TopNav";
+import { ThemeProvider } from "@/context/ThemeContext";
 import { Inter } from "next/font/google";
 
 export const metadata = {
-  title: "Niki Fereidooni Portfolio",
-  description: "Frontend Developer Portfolio",
+  title: "Niki Fereidooni",
+  description: "Senior Developer. Community Builder. Systems Thinker. Ships things.",
   icons: {
-    icon: "/favicon.ico" 
+    icon: "/favicon.ico"
   }
 };
 
@@ -18,14 +19,11 @@ const inter = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="flex flex-col md:flex-row md:justify-between md:gap-4">
-        {/* Sidebar */}
-        <aside className="md:sticky top-0 w-full lg:w-1/4 lg:flex lg:flex-col lg:justify-between lg:py-24">
-          <LeftSidebar />
-        </aside>
-
-        {/* Main Content */}
-        <main className="w-full lg:w-3/4">{children}</main>
+      <body className="bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors" suppressHydrationWarning>
+        <ThemeProvider>
+          <TopNav />
+          <div className="w-full">{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   );
