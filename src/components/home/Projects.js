@@ -29,7 +29,7 @@ function FeaturedCard({ project }) {
     <motion.article
       whileHover={{ y: -6 }}
       transition={{ duration: 0.2 }}
-      className="group relative rounded-xl border border-line bg-surface p-6 flex flex-col hover:border-code transition-colors"
+      className="group relative h-full rounded-xl border border-line bg-surface p-6 flex flex-col hover:border-code transition-colors"
     >
       <div className="flex items-start justify-between mb-4">
         <FolderIcon />
