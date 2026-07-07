@@ -20,7 +20,7 @@ function ConfigCard() {
           {'    '}<span className="text-code">&quot;Build Night TO&quot;</span>, <span className="text-code">&quot;Girls with Big Ideas&quot;</span>{'\n'}
           {'  '}],{'\n'}
           {'  '}<span className="text-ink">exploring</span>: <span className="text-code">&quot;AI-driven workflows&quot;</span>,{'\n'}
-          {'  '}<span className="text-ink">offHours</span>: [<span className="text-code">&quot;Bruce Trail 🌲&quot;</span>, <span className="text-code">&quot;board games&quot;</span>, <span className="text-code">&quot;cortados ☕&quot;</span>],{'\n'}
+          {'  '}<span className="text-ink">offHours</span>: [<span className="text-code">&quot;Bruce Trail 🌲&quot;</span>, <span className="text-code">&quot;board games 🎲&quot;</span>, <span className="text-code">&quot;cortados ☕&quot;</span>],{'\n'}
           {'  '}<span className="text-ink">openTo</span>: <span className="text-code">&quot;interesting conversations&quot;</span>, <span className="text-ink-faint">// always</span>{'\n'}
           <span className="text-ink">{'}'}</span>;
         </code>
