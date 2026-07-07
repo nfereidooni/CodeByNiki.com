@@ -7,9 +7,25 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-geist-sans)", "var(--font-inter)", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "monospace"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+
+        // v3 palette (theme-aware via CSS vars)
+        canvas: "var(--canvas)",
+        surface: "var(--surface)",
+        elevated: "var(--elevated)",
+        line: "var(--line)",
+        ink: "var(--ink)",
+        "ink-muted": "var(--ink-muted)",
+        "ink-faint": "var(--ink-faint)",
+        code: "var(--code-accent)",
+        comm: "var(--comm-accent)",
+        warm: "var(--warm-accent)",
 
         // Light mode colors
         "light-bg": "var(--light-bg)",

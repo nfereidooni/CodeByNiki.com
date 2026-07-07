@@ -1,6 +1,6 @@
 [
   {
-    "timeframe": "Jan 2026 — Present",
+    "timeframe": "Jan 2026 - Present",
     "role": "Senior Developer",
     "company": "Docebo",
     "companyLink": "https://www.docebo.com",
@@ -8,23 +8,24 @@
     "technologies": ["WordPress", "Gutenberg", "React", "PHP", "WP CLI", "JavaScript", "AI"]
   },
   {
-    "timeframe": "Apr 2025 — Jan 2026",
+    "timeframe": "Apr 2025 - Jan 2026",
     "role": "Web Developer",
+    "compact": true,
     "company": "Docebo",
     "companyLink": "https://www.docebo.com",
     "description": "Built and maintained Docebo’s marketing sites with modern WordPress development. Developed custom Gutenberg blocks in React, managed database operations with WP CLI, and prioritized scalability and performance. Collaborated with design, marketing, and product teams while exploring AI-driven workflows for content and optimization.",
     "technologies": ["WordPress", "Gutenberg", "React", "PHP", "WP CLI", "JavaScript", "AI"]
   },
   {
-    "timeframe": "Oct 2024 — Present",
-    "role": "Co-Chair / Lead Event Organizer",
+    "timeframe": "Oct 2024 - Present",
+    "role": "Board Co-Chair / Lead Event Organizer",
     "company": "TechTank",
     "companyLink": "https://www.techtankto.com/",
     "description": "Co-chair the board and lead event organization across Toronto’s tech ecosystem. Spearhead Code Diversity (monthly community gatherings for women and gender-diverse folks in tech), Tech Talks, Build Night TO, and other initiatives. Helped bring TechTank programming to Toronto Tech Week 2025 and guide strategic direction for community programming.",
     "technologies": ["Community Leadership", "Event Strategy", "Mentorship", "Board Governance"]
   },
   {
-    "timeframe": "Jan 2026 — Present",
+    "timeframe": "Jan 2026 - Present",
     "role": "Board Secretary",
     "company": "Life After Burns",
     "companyLink": "https://lifeafterburns.org/",
@@ -32,7 +33,7 @@
     "technologies": ["Board Governance", "Community Support", "Nonprofit Leadership"]
   },
   {
-    "timeframe": "Feb 2022 — Mar 2025",
+    "timeframe": "Feb 2022 - Mar 2025",
     "role": "Frontend Developer",
     "company": "SearchKings",
     "companyLink": "https://www.searchkings.com",
@@ -40,7 +41,7 @@
     "technologies": ["JavaScript", "Tailwind", "HTML & SCSS", "Wordpress", "Shopify", "Jekyll", "Node.js", "PHP"]
   },
   {
-    "timeframe": "Jan 2020 — Sep 2020",
+    "timeframe": "Jan 2020 - Sep 2020",
     "role": "Assistant Manager, UX Team, PLM",
     "company": "Loblaw Companies Limited",
     "companyLink": "https://www.loblaw.ca/",
@@ -48,7 +49,7 @@
     "technologies": ["JIRA", "UX Research"]
   },
   {
-    "timeframe": "Oct 2017 — Jan 2020",
+    "timeframe": "Oct 2017 - Jan 2020",
     "role": "Assistant Packaging Manager",
     "company": "Loblaw Companies Limited",
     "companyLink": "https://www.loblaw.ca/",
@@ -56,7 +57,7 @@
     "technologies": ["Process Mapping", "Sustainability Compliance"]
   },
   {
-    "timeframe": "May 2014 — Oct 2017",
+    "timeframe": "May 2014 - Oct 2017",
     "role": "Project Manager",
     "company": "Schawk!",
     "companyLink": "https://www.sgkinc.com/",
@@ -64,7 +65,7 @@
     "technologies": ["Project Management", "Prepress"]
   },
   {
-    "timeframe": "Apr 2013 — Jul 2013",
+    "timeframe": "Apr 2013 - Jul 2013",
     "role": "Project Coordinator Intern",
     "company": "Jar Creative",
     "companyLink": "https://www.linkedin.com/company/jar-creative/",
