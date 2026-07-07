@@ -48,7 +48,7 @@ export default function About() {
               <a href="https://www.searchkings.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-code transition-colors">SearchKings</a>.
             </p>
             <p>
-              The other half of my life is Toronto&apos;s tech community. Through{' '}
+              Toronto&apos;s tech community is my favourite side quest. Through{' '}
               <a href="https://www.techtankto.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-comm transition-colors">TechTank</a>{' '}
               I help run Code Diversity (monthly coffee chats for women and
               gender-diverse folks in tech), Tech Talks, and the newly launched Build
@@ -66,7 +66,8 @@ export default function About() {
             <p>
               Offline, you&apos;ll find me hiking the{' '}
               <a href="https://torontobrucetrailclub.org/" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-code transition-colors">Bruce Trail</a>,
-              losing gracefully at board games, or deep in a coffee chat.
+              planning the next trip, losing gracefully at board games, or catching
+              up with friends over a cortado.
             </p>
           </Reveal>
 
