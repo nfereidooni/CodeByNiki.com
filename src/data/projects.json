@@ -42,13 +42,6 @@
     "deployment_link": "https://nfereidooni.github.io/nf_code_quiz/"
   },
   {
-    "title": "Eat-Da-Burger",
-    "description": "A burger-eating app where you can add and eat custom burgers. Built using mySQL and Express Handlebars.",
-    "technologies": ["MySQL", "Express", "Handlebars"],
-    "github_link": "https://github.com/nfereidooni/nf_node_express_handlebars",
-    "deployment_link": "https://infinite-scrubland-34308.herokuapp.com/"
-  },
-  {
     "title": "Workday Scheduler",
     "description": "A web application to help you schedule your workday. Built using Moment.js to display the current time and local storage.",
     "technologies": ["JavaScript", "Moment.js", "HTML", "CSS"],

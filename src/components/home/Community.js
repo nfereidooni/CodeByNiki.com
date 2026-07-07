@@ -115,7 +115,7 @@ export default function Community() {
 
         <Reveal className="mb-12">
           <p className="text-base md:text-lg text-ink-muted max-w-2xl leading-relaxed">
-            Half my week happens in the editor; the other half happens in rooms full
+            My days happen in the editor; my evenings happen in rooms full
             of people building things. Through{' '}
             <a href={techtank.link} target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-comm transition-colors">TechTank</a>{' '}
             and beyond, I create intentional spaces where real collaboration and
