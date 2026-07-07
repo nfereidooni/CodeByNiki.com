@@ -123,7 +123,7 @@ export default function Community() {
           </p>
         </Reveal>
 
-        <div className="grid md:grid-cols-2 gap-5 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
           {techtank.initiatives.map((initiative, i) => (
             <InitiativeCard
               key={initiative.id}

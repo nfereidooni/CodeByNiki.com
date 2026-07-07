@@ -35,8 +35,8 @@ export default function About() {
       <div className="max-w-6xl mx-auto">
         <SectionHeading index="01" title="About" comment="cat README.md" />
 
-        <div className="grid lg:grid-cols-5 gap-12 items-start">
-          <Reveal className="lg:col-span-3 space-y-5 text-base md:text-lg leading-relaxed text-ink-muted">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+          <Reveal className="min-w-0 lg:col-span-3 space-y-5 text-base md:text-lg leading-relaxed text-ink-muted">
             <p>
               I&apos;m a product-minded web developer who bridges code, design, product,
               and AI. At{' '}
@@ -70,7 +70,7 @@ export default function About() {
             </p>
           </Reveal>
 
-          <Reveal delay={0.15} className="lg:col-span-2 space-y-6">
+          <Reveal delay={0.15} className="min-w-0 lg:col-span-2 space-y-6">
             <div className="flex justify-center lg:justify-start">
               <div className="relative group">
                 <div className="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-code to-comm opacity-60 blur-sm group-hover:opacity-100 transition-opacity" aria-hidden="true"></div>

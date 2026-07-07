@@ -66,7 +66,7 @@ export default function Hero() {
         aria-hidden="true"
       ></div>
 
-      <div className="relative max-w-6xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Left: intro */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
