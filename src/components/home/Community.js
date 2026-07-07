@@ -14,6 +14,11 @@ function MediaVideo({ src, name }) {
   useEffect(() => {
     const video = ref.current;
     if (!video) return;
+    // Respect reduced motion: show the first frame, never autoplay
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      video.preload = 'metadata';
+      return;
+    }
     let visible = false;
     // With preload="none" the first play() also triggers loading; if a pause()
     // interleaves before it resolves, retry once the video can actually play
