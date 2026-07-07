@@ -5,10 +5,7 @@ import localFont from "next/font/local";
 
 export const metadata = {
   title: "Niki Fereidooni",
-  description: "Senior Developer. Community Builder. Systems Thinker. Ships things.",
-  icons: {
-    icon: "/favicon.ico"
-  }
+  description: "Senior Developer. Community Builder. Systems Thinker. Ships things."
 };
 
 const inter = Inter({
