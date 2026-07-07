@@ -1,7 +1,7 @@
 [
   {
-    "title": "Portfolio Redesign v2",
-    "description": "A major redesign focusing on visual impact and interactions. Light/dark mode, smooth animations, and nature-inspired forest palette. Built with Next.js, Tailwind CSS, and Framer Motion.",
+    "title": "Portfolio Redesign v3",
+    "description": "The site you're on right now. A playful developer redesign with an interactive terminal, git-log-styled experience timeline, and a dual green/pink identity for code and community. Built with Next.js, Tailwind CSS, and Framer Motion.",
     "technologies": ["Next.js", "Tailwind", "React", "Framer Motion"],
     "github_link": "https://github.com/nfereidooni/CodeByNiki.com",
     "deployment_link": "https://www.codebyniki.com"
@@ -19,6 +19,13 @@
     "technologies": ["Next.js", "React", "Tailwind", "Open Source"],
     "github_link": "https://github.com/tech-tankorg/techtank-next",
     "deployment_link": "https://techtankto.com"
+  },
+  {
+    "title": "Portfolio Redesign v2",
+    "description": "A major redesign focusing on visual impact and interactions. Light/dark mode, smooth animations, and nature-inspired forest palette. Built with Next.js, Tailwind CSS, and Framer Motion.",
+    "technologies": ["Next.js", "Tailwind", "React", "Framer Motion"],
+    "github_link": "https://github.com/nfereidooni/CodeByNiki.com",
+    "deployment_link": "https://www.codebyniki.com/v2"
   },
   {
     "title": "Portfolio Redesign v1",

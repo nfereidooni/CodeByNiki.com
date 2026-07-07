@@ -5,6 +5,18 @@
 :root {
   --font-inter: 'Inter', sans-serif;
 
+  /* v3 tokens — dark (default) */
+  --canvas: #0b0f14;
+  --surface: #10161e;
+  --elevated: #151d27;
+  --line: #223041;
+  --ink: #e8edf2;
+  --ink-muted: #97a5b4;
+  --ink-faint: #5c6b7a;
+  --code-accent: #4ade80;
+  --comm-accent: #f472b6;
+  --warm-accent: #fbbf24;
+
   /* Forest palette - shared */
   --forest-dark: #0f1a0c;
   --forest-green-dark: #1a2e14;
@@ -31,10 +43,42 @@
   --dark-accent: #fbcfe8;
 }
 
+/* v3 tokens — light mode overrides (outside @layer so they stay after :root in the cascade) */
+:root[data-theme="light"] {
+  --canvas: #fafaf8;
+  --surface: #ffffff;
+  --elevated: #f2f2ef;
+  --line: #e3e3dd;
+  --ink: #1a1d21;
+  --ink-muted: #565e68;
+  --ink-faint: #9aa1aa;
+  --code-accent: #15803d;
+  --comm-accent: #db2777;
+  --warm-accent: #b45309;
+}
+
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply transition-colors duration-300;
   }
+
+  ::selection {
+    background: var(--code-accent);
+    color: var(--canvas);
+  }
+}
+
+@keyframes cursor-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.blinking-cursor {
+  animation: cursor-blink 1.1s steps(1) infinite;
 }
 
 @layer components {
