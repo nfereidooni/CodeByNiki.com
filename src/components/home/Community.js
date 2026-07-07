@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import communities from '@/data/communities.json';
@@ -68,6 +68,141 @@ const MEDIA = [
   { type: 'photo', src: '/images/hero/IMG_5412.jpeg' },
   { type: 'photo', src: '/images/hiking-hero.webp' },
 ];
+
+function MediaStrip() {
+  const scrollerRef = useRef(null);
+  const [canLeft, setCanLeft] = useState(false);
+  const [canRight, setCanRight] = useState(true);
+
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let raf;
+
+    const update = () => {
+      setCanLeft(el.scrollLeft > 8);
+      setCanRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 8);
+      if (reduceMotion) return;
+      // Depth effect: tiles shrink and fade slightly as they leave center
+      const mid = el.getBoundingClientRect().left + el.clientWidth / 2;
+      for (const tile of el.children) {
+        const r = tile.getBoundingClientRect();
+        const t = Math.min(Math.abs(r.left + r.width / 2 - mid) / el.clientWidth, 1);
+        tile.style.transform = `scale(${1 - t * 0.08})`;
+        tile.style.opacity = `${1 - t * 0.35}`;
+      }
+    };
+
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(update);
+    };
+
+    update();
+    el.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+
+    // One-time nudge when the strip first enters view, so mobile users
+    // discover it scrolls
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        observer.disconnect();
+        if (!reduceMotion && el.scrollLeft < 4) {
+          el.scrollTo({ left: 72, behavior: 'smooth' });
+          setTimeout(() => el.scrollTo({ left: 0, behavior: 'smooth' }), 550);
+        }
+      },
+      { threshold: 0.4 }
+    );
+    observer.observe(el);
+
+    return () => {
+      el.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      observer.disconnect();
+      cancelAnimationFrame(raf);
+    };
+  }, []);
+
+  const page = (dir) => {
+    const el = scrollerRef.current;
+    el?.scrollBy({ left: dir * el.clientWidth * 0.8, behavior: 'smooth' });
+  };
+
+  return (
+    <div>
+      <div className="flex items-center justify-between mb-5">
+        <p className="font-mono text-sm text-ink-faint">$ open ~/media/community</p>
+        <p className="font-mono text-xs text-ink-faint md:hidden" aria-hidden="true">swipe →</p>
+        <div className="hidden md:flex items-center gap-2">
+          <button
+            onClick={() => page(-1)}
+            disabled={!canLeft}
+            aria-label="Scroll gallery back"
+            className="w-9 h-9 rounded-lg border border-line font-mono text-ink-muted hover:text-comm hover:border-comm disabled:opacity-30 disabled:hover:text-ink-muted disabled:hover:border-line transition-colors"
+          >
+            ←
+          </button>
+          <button
+            onClick={() => page(1)}
+            disabled={!canRight}
+            aria-label="Scroll gallery forward"
+            className="w-9 h-9 rounded-lg border border-line font-mono text-ink-muted hover:text-comm hover:border-comm disabled:opacity-30 disabled:hover:text-ink-muted disabled:hover:border-line transition-colors"
+          >
+            →
+          </button>
+        </div>
+      </div>
+
+      <div className="relative">
+        {/* Edge fades hinting at more content */}
+        <div
+          aria-hidden="true"
+          className={`absolute inset-y-0 left-0 w-10 md:w-16 z-10 pointer-events-none bg-gradient-to-r from-canvas to-transparent transition-opacity duration-300 ${canLeft ? 'opacity-100' : 'opacity-0'}`}
+        ></div>
+        <div
+          aria-hidden="true"
+          className={`absolute inset-y-0 right-0 w-10 md:w-16 z-10 pointer-events-none bg-gradient-to-l from-canvas to-transparent transition-opacity duration-300 ${canRight ? 'opacity-100' : 'opacity-0'}`}
+        ></div>
+
+        <div
+          ref={scrollerRef}
+          className="flex gap-4 md:gap-5 overflow-x-auto pb-4 snap-x snap-mandatory"
+        >
+          {MEDIA.map((item) => (
+            <div
+              key={item.src}
+              className={`relative shrink-0 snap-center md:snap-start h-72 md:h-96 ${
+                item.type === 'video' ? 'aspect-[9/16]' : 'aspect-[4/5]'
+              }`}
+            >
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.25 }}
+                className="absolute inset-0 rounded-lg overflow-hidden border border-line shadow-lg"
+              >
+                {item.type === 'video' ? (
+                  <MediaVideo src={item.src} name={item.name} />
+                ) : (
+                  <Image
+                    src={item.src}
+                    alt="Community moments"
+                    fill
+                    sizes="(max-width: 768px) 60vw, 320px"
+                    loading="eager"
+                    className="object-cover"
+                  />
+                )}
+              </motion.div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function InitiativeCard({ name, tagline, description, frequency, audience, link, delay }) {
   return (
@@ -152,35 +287,7 @@ export default function Community() {
 
         {/* Media strip: portrait clips and photos, film-strip style */}
         <Reveal>
-          <div className="flex items-baseline justify-between mb-5">
-            <p className="font-mono text-sm text-ink-faint">$ open ~/media/community</p>
-            <p className="font-mono text-xs text-ink-faint hidden md:block">scroll →</p>
-          </div>
-          <div className="flex gap-4 md:gap-5 overflow-x-auto pb-4 snap-x snap-mandatory">
-            {MEDIA.map((item) => (
-              <motion.div
-                key={item.src}
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.25 }}
-                className={`relative shrink-0 snap-start h-72 md:h-96 rounded-lg overflow-hidden border border-line shadow-lg ${
-                  item.type === 'video' ? 'aspect-[9/16]' : 'aspect-[4/5]'
-                }`}
-              >
-                {item.type === 'video' ? (
-                  <MediaVideo src={item.src} name={item.name} />
-                ) : (
-                  <Image
-                    src={item.src}
-                    alt="Community moments"
-                    fill
-                    sizes="(max-width: 768px) 60vw, 320px"
-                    loading="eager"
-                    className="object-cover"
-                  />
-                )}
-              </motion.div>
-            ))}
-          </div>
+          <MediaStrip />
         </Reveal>
       </div>
     </section>
