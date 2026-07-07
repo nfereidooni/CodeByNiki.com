@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import Terminal from './Terminal';
 import GithubIcon from '@/components/icons/GithubIcon';
 import LinkedInIcon from '@/components/icons/LinkedInIcon';
@@ -14,12 +14,16 @@ const PHRASES = [
   'likes to go outside.',
 ];
 
-function useTypewriter(phrases) {
+function useTypewriter(phrases, frozen) {
   const [text, setText] = useState('');
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
+    if (frozen) {
+      setText(phrases[0]);
+      return;
+    }
     const current = phrases[phraseIndex];
     let delay;
 
@@ -43,13 +47,14 @@ function useTypewriter(phrases) {
     }, delay);
 
     return () => clearTimeout(timeout);
-  }, [text, deleting, phraseIndex, phrases]);
+  }, [text, deleting, phraseIndex, phrases, frozen]);
 
   return text;
 }
 
 export default function Hero() {
-  const typed = useTypewriter(PHRASES);
+  const reduceMotion = useReducedMotion();
+  const typed = useTypewriter(PHRASES, reduceMotion);
 
   return (
     <section className="relative min-h-screen flex items-center px-4 md:px-8 pt-24 pb-16 overflow-hidden">
@@ -66,7 +71,7 @@ export default function Hero() {
         aria-hidden="true"
       ></div>
 
-      <div className="relative max-w-6xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Left: intro */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -80,9 +85,14 @@ export default function Hero() {
             Niki Fereidooni
           </h1>
           <h2 className="font-mono text-xl md:text-2xl text-ink-muted h-16 md:h-10 mb-6">
-            <span className="text-ink-faint">&gt;</span> niki{' '}
-            <span className="text-ink">{typed}</span>
-            <span className="blinking-cursor text-code" aria-hidden="true">▊</span>
+            <span className="sr-only">
+              niki builds thoughtful web things, creates intentional spaces, and ships code and community.
+            </span>
+            <span aria-hidden="true">
+              <span className="text-ink-faint">&gt;</span> niki{' '}
+              <span className="text-ink">{typed}</span>
+              <span className="blinking-cursor text-code">▊</span>
+            </span>
           </h2>
           <p className="text-base md:text-lg text-ink-muted max-w-xl mb-8 leading-relaxed">
             Senior Developer at{' '}

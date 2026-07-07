@@ -99,6 +99,8 @@ export default function Nav() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="sm:hidden p-2 rounded-lg text-ink-muted hover:text-ink hover:bg-elevated transition-colors"
               aria-label="Toggle menu"
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               {mobileMenuOpen ? (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,7 +116,7 @@ export default function Nav() {
         </div>
 
         {mobileMenuOpen && (
-          <div className="sm:hidden border-t border-line pb-3 pt-2 space-y-1">
+          <div id="mobile-menu" className="sm:hidden border-t border-line pb-3 pt-2 space-y-1">
             {LINKS.map(({ id, label, index }) => (
               <button
                 key={id}

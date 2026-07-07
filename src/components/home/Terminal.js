@@ -167,7 +167,13 @@ export default function Terminal() {
         </div>
 
         {/* Body */}
-        <div ref={bodyRef} className="h-64 overflow-y-auto px-4 py-3 font-mono text-sm leading-relaxed">
+        <div
+          ref={bodyRef}
+          role="log"
+          aria-live="polite"
+          aria-label="Terminal output"
+          className="h-64 overflow-y-auto px-4 py-3 font-mono text-sm leading-relaxed"
+        >
           {lines.map((line, i) => (
             <div key={i} className={lineColor(line.type)}>
               {line.type === 'input' && <span className="text-code mr-2">$</span>}

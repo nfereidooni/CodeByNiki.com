@@ -107,7 +107,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <SectionHeading index="03" title="Projects" comment="ls -la ~/projects" />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {featured.map((project, i) => (
             <Reveal key={project.title} delay={i * 0.08}>
               <FeaturedCard project={project} />

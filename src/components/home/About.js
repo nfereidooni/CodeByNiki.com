@@ -35,8 +35,8 @@ export default function About() {
       <div className="max-w-6xl mx-auto">
         <SectionHeading index="01" title="About" comment="cat README.md" />
 
-        <div className="grid lg:grid-cols-5 gap-12 items-start">
-          <Reveal className="lg:col-span-3 space-y-5 text-base md:text-lg leading-relaxed text-ink-muted">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+          <Reveal className="min-w-0 lg:col-span-3 space-y-5 text-base md:text-lg leading-relaxed text-ink-muted">
             <p>
               I&apos;m a product-minded web developer who bridges code, design, product,
               and AI. At{' '}
@@ -48,7 +48,7 @@ export default function About() {
               <a href="https://www.searchkings.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-code transition-colors">SearchKings</a>.
             </p>
             <p>
-              The other half of my life is Toronto&apos;s tech community. Through{' '}
+              Toronto&apos;s tech community is my favourite side quest. Through{' '}
               <a href="https://www.techtankto.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-comm transition-colors">TechTank</a>{' '}
               I help run Code Diversity (monthly coffee chats for women and
               gender-diverse folks in tech), Tech Talks, and the newly launched Build
@@ -66,11 +66,12 @@ export default function About() {
             <p>
               Offline, you&apos;ll find me hiking the{' '}
               <a href="https://torontobrucetrailclub.org/" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-code transition-colors">Bruce Trail</a>,
-              losing gracefully at board games, or deep in a coffee chat.
+              planning the next trip, losing gracefully at board games, or catching
+              up with friends over a cortado.
             </p>
           </Reveal>
 
-          <Reveal delay={0.15} className="lg:col-span-2 space-y-6">
+          <Reveal delay={0.15} className="min-w-0 lg:col-span-2 space-y-6">
             <div className="flex justify-center lg:justify-start">
               <div className="relative group">
                 <div className="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-code to-comm opacity-60 blur-sm group-hover:opacity-100 transition-opacity" aria-hidden="true"></div>
