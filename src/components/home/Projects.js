@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import posthog from 'posthog-js';
 import projects from '@/data/projects.json';
 import SectionHeading from './SectionHeading';
 import Reveal from './Reveal';
@@ -41,6 +42,7 @@ function FeaturedCard({ project }) {
               rel="noopener noreferrer"
               aria-label={`${project.title} on GitHub`}
               className="text-ink-muted hover:text-code transition-colors"
+              onClick={() => posthog.capture('project_link_clicked', { project: project.title, link_type: 'github' })}
             >
               <GithubIcon className="w-5 h-5 fill-current" />
             </a>
@@ -52,6 +54,7 @@ function FeaturedCard({ project }) {
               rel="noopener noreferrer"
               aria-label={`${project.title} live site`}
               className="text-ink-muted hover:text-code transition-colors"
+              onClick={() => posthog.capture('project_link_clicked', { project: project.title, link_type: 'live_site' })}
             >
               <ExternalIcon className="w-5 h-5" />
             </a>
@@ -64,6 +67,7 @@ function FeaturedCard({ project }) {
           target="_blank"
           rel="noopener noreferrer"
           className="group-hover:text-code transition-colors"
+          onClick={() => posthog.capture('project_link_clicked', { project: project.title, link_type: project.deployment_link ? 'live_site' : 'github' })}
         >
           {project.title}
         </a>
@@ -85,6 +89,7 @@ function ArchiveRow({ project }) {
       target="_blank"
       rel="noopener noreferrer"
       className="group flex items-center justify-between gap-4 py-3.5 px-4 -mx-4 rounded-lg hover:bg-elevated transition-colors"
+      onClick={() => posthog.capture('project_link_clicked', { project: project.title, link_type: project.deployment_link ? 'live_site' : 'github' })}
     >
       <div className="flex items-center gap-3 min-w-0">
         <span className="font-mono text-xs text-ink-faint shrink-0" aria-hidden="true">└──</span>

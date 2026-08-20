@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTheme } from '@/context/ThemeContext';
+import posthog from 'posthog-js';
 
 const LINKS = [
   { id: 'about', label: 'about', index: '01' },
@@ -38,6 +39,12 @@ export default function Nav() {
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     setMobileMenuOpen(false);
+    posthog.capture('nav_section_clicked', { section: id });
+  };
+
+  const handleThemeToggle = () => {
+    posthog.capture('theme_toggled', { new_theme: theme === 'dark' ? 'light' : 'dark' });
+    toggleTheme();
   };
 
   return (
@@ -79,7 +86,7 @@ export default function Nav() {
           <div className="flex items-center gap-2">
             {mounted && (
               <button
-                onClick={toggleTheme}
+                onClick={handleThemeToggle}
                 className="p-2 rounded-lg text-ink-muted hover:text-ink hover:bg-elevated transition-colors"
                 aria-label="Toggle theme"
                 title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
