@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import posthog from 'posthog-js';
 import communities from '@/data/communities.json';
 import SectionHeading from './SectionHeading';
 import Reveal from './Reveal';
@@ -214,7 +215,13 @@ function InitiativeCard({ name, tagline, description, frequency, audience, link,
       >
         <div className="flex items-start justify-between gap-3 mb-1.5">
           <h3 className="text-lg font-bold">
-            <a href={link} target="_blank" rel="noopener noreferrer" className="group-hover:text-comm transition-colors">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group-hover:text-comm transition-colors"
+              onClick={() => posthog.capture('community_initiative_clicked', { initiative: name })}
+            >
               {name}
             </a>
           </h3>

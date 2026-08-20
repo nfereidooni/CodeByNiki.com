@@ -5,6 +5,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 import Terminal from './Terminal';
 import GithubIcon from '@/components/icons/GithubIcon';
 import LinkedInIcon from '@/components/icons/LinkedInIcon';
+import posthog from 'posthog-js';
 
 const PHRASES = [
   'builds thoughtful web things.',
@@ -105,13 +106,19 @@ export default function Hero() {
 
           <div className="flex flex-wrap items-center gap-4">
             <button
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => {
+                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                posthog.capture('hero_cta_clicked', { cta: 'view_projects' });
+              }}
               className="font-mono text-sm px-5 py-3 rounded-lg bg-code text-canvas font-semibold hover:opacity-90 hover:-translate-y-0.5 transition-all"
             >
               viewProjects()
             </button>
             <button
-              onClick={() => document.getElementById('community')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => {
+                document.getElementById('community')?.scrollIntoView({ behavior: 'smooth' });
+                posthog.capture('hero_cta_clicked', { cta: 'join_community' });
+              }}
               className="font-mono text-sm px-5 py-3 rounded-lg border border-comm text-comm hover:bg-comm hover:text-canvas hover:-translate-y-0.5 transition-all"
             >
               joinCommunity()
@@ -123,6 +130,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
                 className="text-ink-muted hover:text-ink hover:-translate-y-0.5 transition-all"
+                onClick={() => posthog.capture('social_link_clicked', { platform: 'github', location: 'hero' })}
               >
                 <GithubIcon className="w-5 h-5 fill-current" />
               </a>
@@ -132,6 +140,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 className="text-ink-muted hover:text-ink hover:-translate-y-0.5 transition-all"
+                onClick={() => posthog.capture('social_link_clicked', { platform: 'linkedin', location: 'hero' })}
               >
                 <LinkedInIcon className="w-5 h-5 fill-current" />
               </a>

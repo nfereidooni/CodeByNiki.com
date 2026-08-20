@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import posthog from 'posthog-js';
 import GithubIcon from '@/components/icons/GithubIcon';
 import LinkedInIcon from '@/components/icons/LinkedInIcon';
 
@@ -26,9 +27,17 @@ export default function Footer() {
             </p>
             <p className="font-mono text-xs text-ink-faint mt-4">
               previous versions:{' '}
-              <a href="/v1" className="hover:text-code underline underline-offset-4 transition-colors">v1</a>
+              <a
+                href="/v1"
+                className="hover:text-code underline underline-offset-4 transition-colors"
+                onClick={() => posthog.capture('version_link_clicked', { version: 'v1' })}
+              >v1</a>
               {' · '}
-              <a href="/v2" className="hover:text-code underline underline-offset-4 transition-colors">v2</a>
+              <a
+                href="/v2"
+                className="hover:text-code underline underline-offset-4 transition-colors"
+                onClick={() => posthog.capture('version_link_clicked', { version: 'v2' })}
+              >v2</a>
               {' · '}
               <span className="text-code">v3 (you are here)</span>
             </p>

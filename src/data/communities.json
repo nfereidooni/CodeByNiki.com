@@ -10,7 +10,7 @@
         "tagline": "Monthly coffee chats for women & gender-diverse folks in tech",
         "description": "A recurring space designed to build connection and support among women and gender-diverse people in the Toronto tech community. We gather monthly to chat, share experiences, and build genuine relationships.",
         "frequency": "Monthly",
-        "audience": ["Women in tech", "Gender-diverse engineers", "Community"],
+        "audience": ["TechTank TO", "Women in tech", "Gender-diverse engineers", "Community"],
         "link": "https://www.techtankto.com",
         "logo": "/logos/techtank-fish-light.svg",
         "video": "/videos/techtankto_3872527193918206449.mp4"
@@ -21,7 +21,7 @@
         "tagline": "Toronto is full of people building incredible things. This is a space to do it together.",
         "description": "A brand new four-part series of building, collaboration, and community. Bring your existing project, startup idea, AI workflow, app, website, or side project. Or just your curiosity. Enjoy open build time, community demos, and meet fellow builders. Whether you're shipping code, designing a product, or exploring new tools, you'll be surrounded by ambitious people doing the same.",
         "frequency": "Every 2 weeks",
-        "audience": ["Developers", "Designers", "Builders", "Anyone ambitious"],
+        "audience": ["TechTank TO", "Developers", "Designers", "Builders", "Anyone ambitious"],
         "link": "https://www.techtankto.com",
         "logo": "/logos/techtank-fish-light.svg"
       },
@@ -31,7 +31,7 @@
         "tagline": "Deep dives into tech topics & founder stories",
         "description": "Bi-monthly talks featuring speakers from the Toronto tech community. We explore emerging technologies, share founder stories, and discuss the future of tech in Toronto.",
         "frequency": "Every 1-2 months",
-        "audience": ["Tech community", "Founders", "Everyone interested in tech"],
+        "audience": ["TechTank TO", "Tech community", "Founders", "Everyone interested in tech"],
         "link": "https://www.techtankto.com",
         "logo": "/logos/techtank-fish-light.svg",
         "video": "/videos/techtankto_DZWPNciI8eO.mp4"

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import posthog from 'posthog-js';
 import experiences from '@/data/experiences.json';
 import SectionHeading from './SectionHeading';
 import Reveal from './Reveal';
@@ -133,7 +134,11 @@ export default function Experience() {
 
           {earlier.length > 0 && (
             <button
-              onClick={() => setShowEarlier(!showEarlier)}
+              onClick={() => {
+                const next = !showEarlier;
+                setShowEarlier(next);
+                posthog.capture('experience_earlier_toggled', { expanded: next });
+              }}
               className="ml-8 md:ml-10 font-mono text-sm text-ink-muted hover:text-code border border-line hover:border-code rounded-lg px-4 py-2.5 transition-colors"
             >
               {showEarlier
