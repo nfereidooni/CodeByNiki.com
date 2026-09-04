@@ -67,6 +67,7 @@ const MEDIA = [
   { type: 'photo', src: '/images/hero/IMG-062.jpg' },
   { type: 'video', src: '/videos/girls-with-big-ideas.mp4', name: 'Girls with Big Ideas' },
   { type: 'photo', src: '/images/hero/IMG_5412.jpeg' },
+  { type: 'photo', src: '/images/hero/coworking-niki.webp', objectPosition: 'left center' },
   { type: 'photo', src: '/images/hiking-hero.webp' },
 ];
 
@@ -194,6 +195,7 @@ function MediaStrip() {
                     sizes="(max-width: 768px) 60vw, 320px"
                     loading="eager"
                     className="object-cover"
+                    style={item.objectPosition ? { objectPosition: item.objectPosition } : undefined}
                   />
                 )}
               </motion.div>
