@@ -66,7 +66,10 @@ export default function Footer() {
         </div>
 
         <p className="font-mono text-xs text-ink-faint mt-10">
-          © {new Date().getFullYear()} · exit code 0
+          © {new Date().getFullYear()} · exit code 0 ·{' '}
+          <a href="/privacy" className="hover:text-code underline underline-offset-4 transition-colors">
+            privacy
+          </a>
         </p>
       </div>
     </footer>
