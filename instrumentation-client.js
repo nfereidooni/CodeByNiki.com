@@ -8,6 +8,9 @@ if (!token) {
       'NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN variable required by PostHog is missing or un-configured, this causes events to be silently missed. This error stops appearing once NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN is configured'
     )
   }
+} else if (process.env.NODE_ENV === 'development') {
+  // The /ingest rewrite proxy only works in a deployed build, not the
+  // Turbopack dev server, so skip init here to avoid 404 noise locally.
 } else {
   posthog.init(token, {
     api_host: '/ingest',

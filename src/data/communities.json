@@ -18,9 +18,9 @@
       {
         "id": "build-night-to",
         "name": "Build Night TO",
-        "tagline": "Toronto is full of people building incredible things. This is a space to do it together.",
-        "description": "A brand new four-part series of building, collaboration, and community. Bring your existing project, startup idea, AI workflow, app, website, or side project. Or just your curiosity. Enjoy open build time, community demos, and meet fellow builders. Whether you're shipping code, designing a product, or exploring new tools, you'll be surrounded by ambitious people doing the same.",
-        "frequency": "Every 2 weeks",
+        "tagline": "A four-part series bringing Toronto's builders together to work side by side.",
+        "description": "Ran as a four-part series of building, collaboration, and community. Members brought their own projects, startup ideas, AI workflows, apps, and side projects for open build time, community demos, and meeting fellow builders.",
+        "frequency": "Concluded",
         "audience": ["TechTank TO", "Developers", "Designers", "Builders", "Anyone ambitious"],
         "link": "https://www.techtankto.com",
         "logo": "/logos/techtank-fish-light.svg"

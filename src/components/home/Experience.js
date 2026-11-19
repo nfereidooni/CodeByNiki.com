@@ -1,13 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import posthog from 'posthog-js';
 import experiences from '@/data/experiences.json';
 import SectionHeading from './SectionHeading';
 import Reveal from './Reveal';
 
-const RECENT_COUNT = 5;
+const RECENT_COUNT = 3;
 
 // Deterministic pseudo commit hash so server and client render the same thing
 function fakeHash(seed) {
@@ -16,6 +17,18 @@ function fakeHash(seed) {
     h = (h * 31 + seed.charCodeAt(i)) >>> 0;
   }
   return h.toString(16).padStart(7, '0').slice(0, 7);
+}
+
+function CompanyLogo({ exp, size = 28 }) {
+  if (!exp.logo) return null;
+  return (
+    <span
+      className="inline-flex items-center justify-center shrink-0 rounded-md border border-line bg-surface overflow-hidden mt-0.5"
+      style={{ width: size, height: size }}
+    >
+      <Image src={exp.logo} alt="" width={size} height={size} className="object-contain p-1" />
+    </span>
+  );
 }
 
 function ExperienceEntry({ exp, isLast }) {
@@ -32,18 +45,21 @@ function ExperienceEntry({ exp, isLast }) {
           {' · '}
           {exp.timeframe}
         </p>
-        <h3 className="text-base font-bold">
-          {exp.role}{' '}
-          <span className="text-ink-muted font-medium">@</span>{' '}
-          <a
-            href={exp.companyLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-code hover:underline underline-offset-4"
-          >
-            {exp.company}
-          </a>
-          <span className="font-mono text-xs text-ink-faint font-normal ml-2">// where the chapter above began</span>
+        <h3 className="text-base font-bold flex items-start gap-2">
+          <CompanyLogo exp={exp} size={22} />
+          <span className="flex-1 min-w-0">
+            {exp.role}{' '}
+            <span className="text-ink-muted font-medium">@</span>{' '}
+            <a
+              href={exp.companyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-code hover:underline underline-offset-4"
+            >
+              {exp.company}
+            </a>
+            <span className="font-mono text-xs text-ink-faint font-normal ml-2">// where the chapter above began</span>
+          </span>
         </h3>
       </div>
     );
@@ -60,17 +76,20 @@ function ExperienceEntry({ exp, isLast }) {
         {' · '}
         {exp.timeframe}
       </p>
-      <h3 className="text-lg md:text-xl font-bold">
-        {exp.role}{' '}
-        <span className="text-ink-muted font-medium">@</span>{' '}
-        <a
-          href={exp.companyLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-code hover:underline underline-offset-4"
-        >
-          {exp.company}
-        </a>
+      <h3 className="text-lg md:text-xl font-bold flex items-start gap-2.5">
+        <CompanyLogo exp={exp} />
+        <span className="flex-1 min-w-0">
+          {exp.role}{' '}
+          <span className="text-ink-muted font-medium">@</span>{' '}
+          <a
+            href={exp.companyLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-code hover:underline underline-offset-4"
+          >
+            {exp.company}
+          </a>
+        </span>
       </h3>
       <p className="mt-2 text-ink-muted leading-relaxed max-w-3xl">{exp.description}</p>
       <div className="flex flex-wrap gap-2 mt-3">
@@ -89,8 +108,10 @@ function ExperienceEntry({ exp, isLast }) {
 
 export default function Experience() {
   const [showEarlier, setShowEarlier] = useState(false);
-  const recent = experiences.slice(0, RECENT_COUNT);
-  const earlier = experiences.slice(RECENT_COUNT);
+  const devExperiences = experiences.filter((exp) => exp.track !== 'volunteer');
+  const volunteerExperiences = experiences.filter((exp) => exp.track === 'volunteer');
+  const recent = devExperiences.slice(0, RECENT_COUNT);
+  const earlier = devExperiences.slice(RECENT_COUNT);
 
   return (
     <section id="experience" className="py-24 md:py-32 px-4 md:px-8 bg-surface/50">
@@ -147,6 +168,24 @@ export default function Experience() {
             </button>
           )}
         </Reveal>
+
+        {volunteerExperiences.length > 0 && (
+          <Reveal delay={0.1} className="mt-20">
+            <p className="font-mono text-sm text-ink-faint mb-6">
+              git log --graph <span className="text-code">volunteer/</span>
+              <span className="text-ink-muted"> # outside the editor, still shipping for people</span>
+            </p>
+            <div>
+              {volunteerExperiences.map((exp, i) => (
+                <ExperienceEntry
+                  key={`${exp.company}-${exp.timeframe}`}
+                  exp={exp}
+                  isLast={i === volunteerExperiences.length - 1}
+                />
+              ))}
+            </div>
+          </Reveal>
+        )}
       </div>
     </section>
   );

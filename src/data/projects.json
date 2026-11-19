@@ -7,6 +7,13 @@
     "deployment_link": "https://www.codebyniki.com"
   },
   {
+    "title": "White Blazes",
+    "description": "A hike tracker for the Bruce Trail, from Niagara to Tobermory. Sign in with Google, log the sections you've hiked, and see your coverage and badges by region. Built with Next.js and deployed on Vercel.",
+    "technologies": ["Next.js", "React", "Tailwind"],
+    "github_link": "",
+    "deployment_link": "https://whiteblazes.vercel.app/"
+  },
+  {
     "title": "My Jane's Walk",
     "description": "A scheduling and exploration app for Jane's Walk, a global festival of walking tours. Built with React and Vite. Jane's Walk Toronto was inspired by this project and built their own version, now live at their official site.",
     "technologies": ["React", "Vite", "JavaScript", "CSS"],
