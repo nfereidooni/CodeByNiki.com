@@ -171,7 +171,7 @@ function MediaStrip() {
 
         <div
           ref={scrollerRef}
-          className="flex gap-4 md:gap-5 overflow-x-auto pb-4 snap-x snap-mandatory"
+          className="flex gap-4 md:gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-thin"
         >
           {MEDIA.map((item) => (
             <div

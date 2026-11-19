@@ -1,18 +1,27 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import posthog from 'posthog-js';
 import projects from '@/data/projects.json';
 import SectionHeading from './SectionHeading';
 import Reveal from './Reveal';
 import GithubIcon from '@/components/icons/GithubIcon';
 
-const FEATURED_COUNT = 3;
+const FEATURED_COUNT = 4;
 
 function FolderIcon() {
   return (
     <svg className="w-9 h-9 text-code" fill="none" stroke="currentColor" strokeWidth={1.4} viewBox="0 0 24 24" aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
+    </svg>
+  );
+}
+
+function ChevronIcon({ className = 'w-4 h-4' }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
     </svg>
   );
 }
@@ -104,6 +113,7 @@ function ArchiveRow({ project }) {
 }
 
 export default function Projects() {
+  const [archiveOpen, setArchiveOpen] = useState(false);
   const featured = projects.slice(0, FEATURED_COUNT);
   const archive = projects.slice(FEATURED_COUNT);
 
@@ -122,14 +132,35 @@ export default function Projects() {
 
         {archive.length > 0 && (
           <Reveal delay={0.1} className="mt-14">
-            <p className="font-mono text-sm text-ink-faint mb-3">
-              ~/projects/archive <span className="text-ink-muted"># past portfolio versions & the bootcamp era, kept with love</span>
-            </p>
-            <div className="border-t border-line pt-2">
-              {archive.map((project) => (
-                <ArchiveRow key={project.title} project={project} />
-              ))}
-            </div>
+            <button
+              type="button"
+              onClick={() => setArchiveOpen((open) => !open)}
+              aria-expanded={archiveOpen}
+              className="group flex items-center gap-2 font-mono text-sm text-ink-faint hover:text-code transition-colors"
+            >
+              <ChevronIcon className={`w-3.5 h-3.5 transition-transform ${archiveOpen ? 'rotate-180' : ''}`} />
+              <span>
+                ~/projects/archive <span className="text-ink-muted group-hover:text-ink-faint"># past portfolio versions & the bootcamp era, kept with love</span>
+              </span>
+            </button>
+
+            <AnimatePresence initial={false}>
+              {archiveOpen && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.25 }}
+                  className="overflow-hidden"
+                >
+                  <div className="border-t border-line pt-2 mt-3">
+                    {archive.map((project) => (
+                      <ArchiveRow key={project.title} project={project} />
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </Reveal>
         )}
       </div>

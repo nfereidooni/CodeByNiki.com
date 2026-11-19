@@ -10,14 +10,14 @@ function ConfigCard() {
       <div className="flex items-center gap-2 px-4 py-2.5 border-b border-line bg-elevated">
         <span className="font-mono text-xs text-ink-faint">niki.config.js</span>
       </div>
-      <pre className="p-4 md:p-5 font-mono text-[13px] leading-relaxed overflow-x-auto">
+      <pre className="p-4 md:p-5 font-mono text-[13px] leading-relaxed overflow-x-auto scrollbar-thin">
         <code>
           <span className="text-comm">export default</span> <span className="text-ink">{'{'}</span>{'\n'}
           {'  '}<span className="text-ink">role</span>: <span className="text-code">&quot;Senior Developer @ Docebo&quot;</span>,{'\n'}
           {'  '}<span className="text-ink">location</span>: <span className="text-code">&quot;Toronto, Canada&quot;</span>,{'\n'}
           {'  '}<span className="text-ink">community</span>: [{'\n'}
           {'    '}<span className="text-code">&quot;TechTank&quot;</span>, <span className="text-code">&quot;Code Diversity&quot;</span>,{'\n'}
-          {'    '}<span className="text-code">&quot;Build Night TO&quot;</span>, <span className="text-code">&quot;Girls with Big Ideas&quot;</span>{'\n'}
+          {'    '}<span className="text-code">&quot;Tech Talks&quot;</span>, <span className="text-code">&quot;Girls with Big Ideas&quot;</span>{'\n'}
           {'  '}],{'\n'}
           {'  '}<span className="text-ink">exploring</span>: <span className="text-code">&quot;AI-driven workflows&quot;</span>,{'\n'}
           {'  '}<span className="text-ink">offHours</span>: [<span className="text-code">&quot;Bruce Trail 🌲&quot;</span>, <span className="text-code">&quot;board games 🎲&quot;</span>, <span className="text-code">&quot;cortados ☕&quot;</span>],{'\n'}
@@ -51,7 +51,7 @@ export default function About() {
               Toronto&apos;s tech community is my favourite side quest. Through{' '}
               <a href="https://www.techtankto.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-comm transition-colors">TechTank</a>{' '}
               I help run Code Diversity (monthly coffee chats for women and
-              gender-diverse folks in tech), Tech Talks, and the newly launched Build
+              gender-diverse folks in tech) and Tech Talks, and previously ran Build
               Night TO. I also co-created{' '}
               <a href="https://luma.com/qyw4ntm7" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-comm transition-colors">Girls with Big Ideas</a>,
               a space for early-stage founders to find cofounders.
